@@ -1,0 +1,41 @@
+.CodeBackground {
+  @apply absolute left-0 top-0 z-[-50] flex h-screen min-h-screen w-full items-center justify-center opacity-30;
+}
+
+.text {
+  @apply relative whitespace-nowrap text-[20rem] font-black text-black;
+  text-shadow:
+    -2px 3px 0 rgb(0, 174, 255),
+    2px -3px 0 rgb(255, 0, 157);
+}
+
+.text > span {
+  @apply absolute left-0 top-0;
+}
+
+.text > span:first-child {
+  animation: glitch 2s infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  user-select: none;
+  --glitchAmount: -0.2em;
+}
+
+.text > span:last-child {
+  animation: glitch 3s infinite;
+  clip-path: polygon(0 100%, 100% 100%, 100% 70%, 0 70%);
+  user-select: none;
+  --glitchAmount: 0.2em;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  2% {
+    transform: translate(var(--glitchAmount));
+  }
+  10%,
+  100% {
+    transform: none;
+  }
+}
