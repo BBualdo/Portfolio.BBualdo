@@ -26,14 +26,19 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.active {
+  color: white;
+  transform: scale(1.25);
+}
+
 @layer base {
   section {
     @apply min-h-screen;
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .gradient-bw {
+    @apply bg-gradient-to-b from-white to-black to-60%;
   }
 }
