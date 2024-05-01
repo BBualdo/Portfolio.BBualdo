@@ -1,14 +1,18 @@
 import { revalia } from "@/fonts";
 import CodeBackground from "./backgrounds/CodeBackground";
+import CTAButton from "./shared/CTAButton";
 
 export default function Hero() {
   return (
     <>
       <CodeBackground />
-      <section id="hero">
-        <div className="flex h-full flex-col items-center justify-center">
-          <h1 className={`${revalia.className} relative`}>Sebastian Opozda</h1>
-          <h2>I am a Web Developer</h2>
+      <section id="hero" className={revalia.className}>
+        <div className="flex h-full flex-col items-center justify-center gap-4">
+          <h1 className={`relative`}>Sebastian Opozda</h1>
+          <h2 className="uppercase">
+            I am a <span className="text-viceCyan">Web Developer</span>
+          </h2>
+          <CTAButton>Check out my work</CTAButton>
         </div>
       </section>
     </>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { inter } from "@/fonts";
+import { lato } from "@/fonts";
 
 export const metadata: Metadata = {
   title: "Sebastian Opozda | Web Developer Portfolio",
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={lato.className}>{children}</body>
     </html>
   );
 }
