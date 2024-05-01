@@ -33,7 +33,7 @@ body {
 
 @layer base {
   section {
-    @apply h-screen min-h-screen;
+    @apply min-h-screen;
   }
 
   h1 {
