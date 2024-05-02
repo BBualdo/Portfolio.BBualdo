@@ -8,7 +8,7 @@ export default function Projects() {
     const secondOrder = index % 2 == 0 ? 2 : 1;
     // image desktop
     return (
-      <div className="flex rounded-xl border-4">
+      <div key={project.id} className="flex rounded-xl border-4">
         <div className={`relative order-${firstOrder} flex-1`}>
           <Image src={project.image.desktop} alt="" fill objectFit="contain" />
         </div>
@@ -22,8 +22,11 @@ export default function Projects() {
           <div>
             <p className="font-bold uppercase">Technologies:</p>
             <ul>
-              {project.technologies.map((t) => (
-                <li className="my-2 mr-2 inline-block rounded-xl border-2 border-viceCyan bg-viceCyan/10 px-4 py-2 font-bold text-white shadow-[0_4px_0] shadow-viceCyan">
+              {project.technologies.map((t, index) => (
+                <li
+                  key={index}
+                  className="my-2 mr-2 inline-block rounded-xl border-2 border-viceCyan bg-viceCyan/10 px-4 py-2 font-bold text-white shadow-[0_4px_0] shadow-viceCyan"
+                >
                   {t}
                 </li>
               ))}
