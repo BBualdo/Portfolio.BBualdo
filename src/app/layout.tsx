@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { lato } from "@/fonts";
+import { lato } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Sebastian Opozda | Web Developer Portfolio",

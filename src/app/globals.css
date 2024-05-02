@@ -2,28 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
+  color: white;
 }
 
 .active {
@@ -31,9 +12,13 @@ body {
   transform: scale(1.25);
 }
 
+.text-shadow-vicePink {
+  text-shadow: 2px 2px 0 rgba(255, 0, 157, 0.7);
+}
+
 @layer base {
   section {
-    @apply min-h-screen;
+    @apply min-h-screen px-40;
   }
 
   h1 {
@@ -43,14 +28,22 @@ body {
   h2 {
     @apply text-4xl;
   }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
 }
 
 @layer components {
   .gradient-bw {
-    @apply bg-gradient-to-b from-white to-black to-60%;
+    @apply bg-gradient-to-b from-white to-black to-100%;
   }
 
   .gradient-pinkcyan {
-    @apply from-vicePink to-viceCyan bg-gradient-to-tl to-70%;
+    @apply bg-gradient-to-tl from-vicePink to-viceCyan to-70%;
   }
 }

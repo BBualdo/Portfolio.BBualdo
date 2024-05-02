@@ -1,4 +1,4 @@
-import { revalia } from "@/fonts";
+import { revalia } from "@/utils/fonts";
 import CodeBackground from "./backgrounds/CodeBackground";
 import CTAButton from "./shared/CTAButton";
 
