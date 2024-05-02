@@ -3,8 +3,6 @@ import getCodingTime from "@/utils/getCodingTime";
 import Image from "next/image";
 
 const Info = () => {
-  const [years, months, days] = getCodingTime();
-
   return (
     <div className="flex-1">
       <div className="flex items-start gap-4">
@@ -28,16 +26,7 @@ const Info = () => {
           </h4>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-4 text-center text-lg">
-        <div
-          className={`${revalia.className} flex flex-col items-center gap-2 p-4 uppercase`}
-        >
-          <p>My Code Journey began:</p>
-          <p className="text-3xl text-vicePink">
-            {years > 0 && `${years} years `}
-            {`${months} months ${days} days ago`}
-          </p>
-        </div>
+      <div className="flex flex-col items-center gap-4 py-4 text-center text-lg">
         <p>
           My journey into the world of development was sparked by my{" "}
           <span className="font-bold text-viceCyan">
