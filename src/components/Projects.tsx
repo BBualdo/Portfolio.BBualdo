@@ -39,7 +39,7 @@ export default function Projects() {
             <a
               href={project.linkToRepo}
               target="_blank"
-              className="flex items-center gap-2 border-2 border-white bg-black px-4 py-2 font-bold uppercase transition-all duration-200 hover:border-vicePink hover:text-vicePink"
+              className="pointer flex items-center gap-2 border-2 border-white bg-black px-4 py-2 font-bold uppercase transition-all duration-200 hover:border-vicePink hover:text-vicePink"
             >
               Source Code <FaExternalLinkAlt />
             </a>
@@ -47,7 +47,7 @@ export default function Projects() {
               <a
                 href={project.linkToLive}
                 target="_blank"
-                className="flex items-center gap-2 px-4 py-2 font-bold uppercase transition-all duration-200 hover:text-viceCyan"
+                className="pointer flex items-center gap-2 px-4 py-2 font-bold uppercase transition-all duration-200 hover:text-viceCyan"
               >
                 Live Site <FaExternalLinkAlt />
               </a>

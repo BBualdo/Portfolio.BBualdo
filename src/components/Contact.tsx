@@ -43,19 +43,19 @@ export default function Contact() {
               <div className="flex items-center justify-center gap-20 border p-10 text-white/50">
                 <a
                   href="mailto:sebastian.opozda.2305@gmail.com"
-                  className="transition-all duration-200 hover:scale-110 hover:text-white"
+                  className="pointer transition-all duration-200 hover:scale-110 hover:text-white"
                 >
                   <MdEmail className="text-6xl" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/sebastian-opozda/"
-                  className="transition-all duration-200 hover:scale-110 hover:text-white"
+                  className="pointer transition-all duration-200 hover:scale-110 hover:text-white"
                 >
                   <FaLinkedin className="text-5xl" />
                 </a>
                 <button
                   onClick={copyEmail}
-                  className="border border-white/50 px-4 py-2 shadow-[0_8px_0] shadow-white/50 duration-200 hover:scale-110 hover:border-white hover:text-white hover:shadow-white hover:transition-all active:mt-4 active:shadow-none"
+                  className="pointer border border-white/50 px-4 py-2 shadow-[0_8px_0] shadow-white/50 duration-200 hover:scale-110 hover:border-white hover:text-white hover:shadow-white hover:transition-all active:mt-4 active:shadow-none"
                 >
                   Copy Email
                 </button>

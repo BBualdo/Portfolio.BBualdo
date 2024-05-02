@@ -21,6 +21,7 @@
 body {
   background-color: black;
   color: white;
+  cursor: url("/default.png"), auto;
 }
 
 .active {
@@ -34,6 +35,10 @@ body {
 
 .text-shadow-viceCyan {
   text-shadow: 2px 2px 0 rgba(0, 174, 255, 0.7);
+}
+
+.pointer {
+  cursor: url("/pointer.png"), pointer;
 }
 
 @layer base {

@@ -18,7 +18,7 @@ export default function Nav() {
             smooth
             spy={true}
             activeClass="active"
-            className="cursor-pointer transition-all duration-200 hover:scale-125 hover:text-white"
+            className="pointer transition-all duration-200 hover:scale-125 hover:text-white"
           >
             <HiHome />
           </Link>
@@ -27,7 +27,7 @@ export default function Nav() {
             smooth
             spy={true}
             activeClass="active"
-            className="cursor-pointer transition-all duration-200 hover:scale-125 hover:text-white"
+            className="pointer transition-all duration-200 hover:scale-125 hover:text-white"
           >
             <BsPersonFill />
           </Link>
@@ -36,7 +36,7 @@ export default function Nav() {
             smooth
             spy={true}
             activeClass="active"
-            className="cursor-pointer transition-all duration-200 hover:scale-125 hover:text-white"
+            className="pointer transition-all duration-200 hover:scale-125 hover:text-white"
           >
             <FaLaptopCode />
           </Link>
@@ -45,7 +45,7 @@ export default function Nav() {
             smooth
             spy={true}
             activeClass="active"
-            className="cursor-pointer transition-all duration-200 hover:scale-125 hover:text-white"
+            className="pointer transition-all duration-200 hover:scale-125 hover:text-white"
           >
             <BiSolidMessageDetail />
           </Link>
@@ -53,7 +53,7 @@ export default function Nav() {
           <a
             href="https://github.com/BBualdo/"
             target="_blank"
-            className="cursor-pointer text-viceCyan transition-all duration-200 hover:text-white"
+            className="pointer text-viceCyan transition-all duration-200 hover:text-white"
           >
             <FaGithub />
           </a>
