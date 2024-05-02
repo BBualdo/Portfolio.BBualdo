@@ -9,11 +9,12 @@ export default function Projects() {
     // image desktop
     return (
       <div key={project.id} className="flex rounded-xl border-4">
-        <div className={`relative order-${firstOrder} flex-1`}>
+        <div className="relative flex-1" style={{ order: firstOrder }}>
           <Image src={project.image.desktop} alt="" fill objectFit="contain" />
         </div>
         <div
-          className={`order-${secondOrder} flex flex-1 flex-col gap-10 px-10 py-6`}
+          className="flex flex-1 flex-col gap-10 px-10 py-6"
+          style={{ order: secondOrder }}
         >
           <p className="text-2xl font-black uppercase text-viceCyan">
             {project.name}
@@ -60,9 +61,13 @@ export default function Projects() {
   });
 
   return (
-    <section id="projects">
-      <div>
-        <h3></h3>
+    <section id="projects" className="py-20">
+      <div className="flex flex-col items-center gap-20">
+        <h4 className="w-[800px] text-center">
+          Here you can browse my latest projects. These are result of my hard
+          work, everything I'll learn is translated into new project to practice
+          new skills.
+        </h4>
         <div className="flex flex-col gap-20">{projectsElement}</div>
       </div>
     </section>
