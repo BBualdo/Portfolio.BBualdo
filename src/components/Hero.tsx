@@ -1,6 +1,6 @@
 import { revalia } from "@/utils/fonts";
 import CodeBackground from "./backgrounds/CodeBackground";
-import ProjectsCTA from "./shared/ProjectsCTA";
+import CTA from "./shared/CTA";
 
 export default function Hero() {
   return (
@@ -12,7 +12,7 @@ export default function Hero() {
           <h2 className="uppercase">
             I am a <span className="text-viceCyan">Web Developer</span>
           </h2>
-          <ProjectsCTA />
+          <CTA href="projects">Check out my work</CTA>
         </div>
       </section>
     </>

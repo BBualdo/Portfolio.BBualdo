@@ -1,5 +1,5 @@
 import { revalia } from "@/utils/fonts";
-import ProjectsCTA from "../shared/ProjectsCTA";
+import CTA from "../shared/CTA";
 import Info from "./Info";
 import Tech from "./Tech";
 
@@ -12,7 +12,7 @@ export default function About() {
           <Info />
           <div className="flex flex-1 flex-col items-center">
             <Tech />
-            <ProjectsCTA />
+            <CTA href="projects">Check out my work</CTA>
           </div>
         </div>
       </div>

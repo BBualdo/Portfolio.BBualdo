@@ -2,6 +2,7 @@ import { projects } from "@/constants/projects";
 import { revalia } from "@/utils/fonts";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import CTAAnchor from "./shared/CTAAnchor";
 
 export default function Projects() {
   const projectsElement = projects.map((project, index) => {
@@ -66,11 +67,16 @@ export default function Projects() {
       <div className="flex flex-col gap-20">
         <h2 className={`${revalia.className} title`}>Projects</h2>
         <div className="flex flex-col items-center gap-20">
-          <h4 className={`${revalia.className} w-[800px] text-center`}>
-            Here you can browse my latest projects. These are result of my hard
-            work and everything I'll learn is translated into new project to
-            practice new skills.
-          </h4>
+          <div className="flex flex-col items-center">
+            <h4 className={`${revalia.className} w-[800px] text-center`}>
+              Here you can browse my latest projects. These are result of my
+              hard work and everything I'll learn is translated into new project
+              to practice new skills.
+            </h4>
+            <CTAAnchor href="https://github.com/BBualdo?tab=repositories">
+              View All Projects
+            </CTAAnchor>
+          </div>
           <div className="flex flex-col gap-20">{projectsElement}</div>
         </div>
       </div>
