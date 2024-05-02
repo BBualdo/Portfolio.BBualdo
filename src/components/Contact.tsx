@@ -31,9 +31,9 @@ export default function Contact() {
     <>
       {isCoppied ? <Popup /> : null}
       <section id="contact" className={`${revalia.className} py-20`}>
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col justify-center gap-20">
           <h2 className="title">Contact</h2>
-          <div className="flex gap-10">
+          <div className="mt-40 flex items-center gap-10">
             <div className="flex-1">
               <p className="text-vicePink">Get in touch</p>
               <h3 className="text-4xl">Let's work together</h3>
