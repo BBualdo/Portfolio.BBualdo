@@ -11,6 +11,7 @@ const Tech = () => {
       <ul>
         {skills.map((skill) => (
           <li
+            key={skill.id}
             className="m-2 inline-block px-4 py-2"
             style={{ boxShadow: `0 4px 0 ${skill.color}` }}
           >
