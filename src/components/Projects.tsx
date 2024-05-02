@@ -1,4 +1,5 @@
 import { projects } from "@/constants/projects";
+import { revalia } from "@/utils/fonts";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -6,7 +7,7 @@ export default function Projects() {
   const projectsElement = projects.map((project, index) => {
     const firstOrder = index % 2 == 0 ? 1 : 2;
     const secondOrder = index % 2 == 0 ? 2 : 1;
-    // image desktop
+
     return (
       <div key={project.id} className="flex rounded-xl border-4">
         <div className="relative flex-1" style={{ order: firstOrder }}>
@@ -62,13 +63,16 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-20">
-      <div className="flex flex-col items-center gap-20">
-        <h4 className="w-[800px] text-center">
-          Here you can browse my latest projects. These are result of my hard
-          work, everything I'll learn is translated into new project to practice
-          new skills.
-        </h4>
-        <div className="flex flex-col gap-20">{projectsElement}</div>
+      <div className="flex flex-col gap-20">
+        <h2 className={`${revalia.className} title`}>Projects</h2>
+        <div className="flex flex-col items-center gap-20">
+          <h4 className={`${revalia.className} w-[800px] text-center`}>
+            Here you can browse my latest projects. These are result of my hard
+            work and everything I'll learn is translated into new project to
+            practice new skills.
+          </h4>
+          <div className="flex flex-col gap-20">{projectsElement}</div>
+        </div>
       </div>
     </section>
   );

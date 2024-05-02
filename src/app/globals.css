@@ -16,6 +16,10 @@ body {
   text-shadow: 2px 2px 0 rgba(255, 0, 157, 0.7);
 }
 
+.text-shadow-viceCyan {
+  text-shadow: 2px 2px 0 rgba(0, 174, 255, 0.7);
+}
+
 @layer base {
   section {
     @apply min-h-screen px-40;
@@ -53,5 +57,9 @@ body {
 
   .gradient-pinkcyan {
     @apply bg-gradient-to-tl from-vicePink to-viceCyan to-70%;
+  }
+
+  .title {
+    @apply text-shadow-viceCyan uppercase;
   }
 }
