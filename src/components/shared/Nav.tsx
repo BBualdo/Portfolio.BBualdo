@@ -54,7 +54,7 @@ export default function Nav() {
             href="https://github.com/BBualdo/"
             target="_blank"
             id="linkToGithub"
-            aria-description="Link to Github"
+            aria-label="Link to Github"
             className="pointer text-viceCyan transition-all duration-200 hover:text-white"
           >
             <FaGithub />

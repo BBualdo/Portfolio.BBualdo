@@ -65,7 +65,7 @@ export default function Projects() {
             <a
               href={project.linkToRepo}
               id="sourceCode"
-              aria-description={`Link to ${project.name} Source Code`}
+              aria-label={`Link to ${project.name} Source Code`}
               target="_blank"
               className="pointer flex items-center gap-2 border-2 border-white bg-black px-4 py-2 text-xs font-bold uppercase transition-all duration-200 hover:border-vicePink hover:text-vicePink lg:text-base"
             >
@@ -76,7 +76,7 @@ export default function Projects() {
                 href={project.linkToLive}
                 target="_blank"
                 id="liveSite"
-                aria-description={`Link to ${project.name} Live Website`}
+                aria-label={`Link to ${project.name} Live Website`}
                 className="pointer flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase transition-all duration-200 hover:text-viceCyan lg:text-base"
               >
                 Live Site <FaExternalLinkAlt />
@@ -119,7 +119,7 @@ export default function Projects() {
             </h4>
             <CTAAnchor
               id="linkToRepositories"
-              ariaDescription="Link To Github Repositories"
+              ariaLabel="Link To Github Repositories"
               href="https://github.com/BBualdo?tab=repositories"
             >
               View All Projects

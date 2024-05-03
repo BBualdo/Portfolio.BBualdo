@@ -65,7 +65,7 @@ export default function Contact() {
               <div className="flex items-center justify-center gap-10 rounded-xl border p-10 text-white/50 lg:gap-14 xl:gap-20">
                 <a
                   id="email"
-                  aria-description="Open Email window"
+                  aria-label="Open Email window"
                   href="mailto:sebastian.opozda.2305@gmail.com"
                   className="pointer transition-all duration-200 hover:scale-110 hover:text-white"
                 >
@@ -73,7 +73,7 @@ export default function Contact() {
                 </a>
                 <a
                   id="linkToLinkedin"
-                  aria-description="Link to LinkedIn"
+                  aria-label="Link to LinkedIn"
                   href="https://www.linkedin.com/in/sebastian-opozda/"
                   className="pointer transition-all duration-200 hover:scale-110 hover:text-white"
                 >
