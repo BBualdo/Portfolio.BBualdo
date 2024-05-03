@@ -26,7 +26,13 @@ export default function Projects() {
           className="relative flex-1 xs:max-lg:hidden"
           style={{ order: firstOrder }}
         >
-          <Image src={project.image.desktop} alt="" fill objectFit="contain" />
+          <Image
+            src={project.image.desktop}
+            alt=""
+            fill
+            sizes={"100%"}
+            className="object-contain"
+          />
         </div>
         <div
           className="flex flex-1 flex-col gap-10 px-6 py-6 xl:px-10"
