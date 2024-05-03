@@ -29,7 +29,7 @@ const Info = () => {
             <span className="text-vicePink">BBualdo</span> online.
           </h3>
           <h4>
-            I'm a freelance developer with a passion for both front-end and
+            I&#39;m a freelance developer with a passion for both front-end and
             back-end technologies, steering towards becoming a full-stack
             developer.
           </h4>
@@ -77,8 +77,8 @@ const Info = () => {
           <span className="font-bold text-viceCyan">back-end development</span>{" "}
           to fully round out my skill set. Choosing{" "}
           <span className="font-bold text-violet-600">C#</span> over Node.js —
-          inspired by a friend's experience and the powerful capabilities of the
-          language — I swiftly adapted to new paradigms, delving into{" "}
+          inspired by a friend&#39;s experience and the powerful capabilities of
+          the language — I swiftly adapted to new paradigms, delving into{" "}
           <span>Unity</span> for game development, and mastering{" "}
           <span className="font-bold text-violet-600">ASP.NET Core</span>. My
           recent stint with the{" "}

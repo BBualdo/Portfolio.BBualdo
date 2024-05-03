@@ -104,8 +104,8 @@ export default function Projects() {
           >
             <h4 className={`${revalia.className} text-center lg:w-[800px]`}>
               Here you can browse my latest projects. These are result of my
-              hard work and everything I'll learn is translated into new project
-              to practice new skills.
+              hard work and everything I&#39;ll learn is translated into new
+              project to practice new skills.
             </h4>
             <CTAAnchor href="https://github.com/BBualdo?tab=repositories">
               View All Projects

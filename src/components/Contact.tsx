@@ -52,7 +52,7 @@ export default function Contact() {
               className="flex-1"
             >
               <p className="text-center text-vicePink">Get in touch</p>
-              <h3 className="text-4xl">Let's work together</h3>
+              <h3 className="text-4xl">Let&#39;s work together</h3>
             </motion.div>
             <motion.div
               variants={fadeIn("left", 0.5, 1, 1)}
