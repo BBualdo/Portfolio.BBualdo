@@ -64,12 +64,16 @@ export default function Contact() {
               <h3>How do you want to contact me?</h3>
               <div className="flex items-center justify-center gap-10 rounded-xl border p-10 text-white/50 lg:gap-14 xl:gap-20">
                 <a
+                  id="email"
+                  aria-description="Open Email window"
                   href="mailto:sebastian.opozda.2305@gmail.com"
                   className="pointer transition-all duration-200 hover:scale-110 hover:text-white"
                 >
                   <MdEmail className="text-4xl lg:text-6xl" />
                 </a>
                 <a
+                  id="linkToLinkedin"
+                  aria-description="Link to LinkedIn"
                   href="https://www.linkedin.com/in/sebastian-opozda/"
                   className="pointer transition-all duration-200 hover:scale-110 hover:text-white"
                 >

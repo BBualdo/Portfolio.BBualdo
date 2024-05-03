@@ -5,7 +5,8 @@ import { lato } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Sebastian Opozda | Web Developer Portfolio",
-  description: "",
+  description:
+    "Personal web development portfolio website to showcase what I can do.",
 };
 
 export default function RootLayout({
