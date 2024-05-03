@@ -117,13 +117,15 @@ export default function Projects() {
               hard work and everything I&#39;ll learn is translated into new
               project to practice new skills.
             </h4>
-            <CTAAnchor
-              id="linkToRepositories"
-              ariaLabel="Link To Github Repositories"
-              href="https://github.com/BBualdo?tab=repositories"
-            >
-              View All Projects
-            </CTAAnchor>
+            <div className="mt-4 lg:mt-10">
+              <CTAAnchor
+                id="linkToRepositories"
+                ariaLabel="Link To Github Repositories"
+                href="https://github.com/BBualdo?tab=repositories"
+              >
+                View All Projects
+              </CTAAnchor>
+            </div>
           </motion.div>
           <div className="flex flex-col gap-20">{projectsElement}</div>
         </div>

@@ -53,7 +53,9 @@ const Tech = () => {
           ))}
         </ul>
       </div>
-      <CTA href="projects">Check out my work</CTA>
+      <div className="mt-4 lg:mt-10">
+        <CTA href="projects">Check out my work</CTA>
+      </div>
     </motion.div>
   );
 };

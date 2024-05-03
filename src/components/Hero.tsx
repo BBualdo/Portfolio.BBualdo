@@ -5,6 +5,8 @@ import CodeBackground from "./backgrounds/CodeBackground";
 import CTA from "./shared/CTA";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
+import CTAAnchor from "./shared/CTAAnchor";
+import DownloadCV from "./shared/DownloadCV";
 
 export default function Hero() {
   return (
@@ -23,7 +25,10 @@ export default function Hero() {
           <h2 className="uppercase">
             I am a <span className="text-viceCyan">Web Developer</span>
           </h2>
-          <CTA href="projects">Check out my work</CTA>
+          <div className="mt-4 flex items-center gap-4 lg:mt-10">
+            <CTA href="projects">Check out my work</CTA>
+            <DownloadCV />
+          </div>
         </div>
       </motion.section>
     </>
