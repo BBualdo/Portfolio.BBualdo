@@ -3,7 +3,7 @@
 }
 
 .text {
-  @apply relative top-52 whitespace-nowrap text-[10rem] font-black text-black xs:max-xl:right-24 xl:top-60 xl:text-[20rem];
+  @apply relative top-52 whitespace-nowrap text-[10rem] font-black text-black xs:max-lg:right-24 lg:top-60 lg:text-[20rem];
   text-shadow:
     -2px 3px 0 rgb(0, 174, 255),
     2px -3px 0 rgb(255, 0, 157);

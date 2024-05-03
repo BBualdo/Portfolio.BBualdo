@@ -12,7 +12,7 @@ export default function Projects() {
     return (
       <div key={project.id} className="flex rounded-xl border-4">
         <div
-          className="relative flex-1 xs:max-xl:hidden"
+          className="relative flex-1 xs:max-lg:hidden"
           style={{ order: firstOrder }}
         >
           <Image src={project.image.desktop} alt="" fill objectFit="contain" />
@@ -21,7 +21,7 @@ export default function Projects() {
           className="flex flex-1 flex-col gap-10 px-6 py-6 xl:px-10"
           style={{ order: secondOrder }}
         >
-          <p className="text-xl font-black uppercase text-viceCyan xl:text-2xl">
+          <p className="text-xl font-black uppercase text-viceCyan lg:text-2xl">
             {project.name}
           </p>
           <p>{project.description}</p>
@@ -38,11 +38,11 @@ export default function Projects() {
               ))}
             </ul>
           </div>
-          <div className="flex items-center xl:gap-4">
+          <div className="flex items-center lg:gap-4">
             <a
               href={project.linkToRepo}
               target="_blank"
-              className="pointer xl:text-md flex items-center gap-2 border-2 border-white bg-black px-4 py-2 text-xs font-bold uppercase transition-all duration-200 hover:border-vicePink hover:text-vicePink"
+              className="pointer flex items-center gap-2 border-2 border-white bg-black px-4 py-2 text-xs font-bold uppercase transition-all duration-200 hover:border-vicePink hover:text-vicePink lg:text-base"
             >
               Source Code <FaExternalLinkAlt />
             </a>
@@ -50,7 +50,7 @@ export default function Projects() {
               <a
                 href={project.linkToLive}
                 target="_blank"
-                className="pointer xl:text-md flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase transition-all duration-200 hover:text-viceCyan"
+                className="pointer flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase transition-all duration-200 hover:text-viceCyan lg:text-base"
               >
                 Live Site <FaExternalLinkAlt />
               </a>
@@ -66,12 +66,12 @@ export default function Projects() {
   });
 
   return (
-    <section id="projects" className="py-10 xl:py-20">
+    <section id="projects" className="py-10 lg:py-20">
       <div className="flex flex-col gap-20">
         <h2 className={`${revalia.className} title`}>Projects</h2>
         <div className="flex flex-col items-center gap-20">
           <div className="flex flex-col items-center">
-            <h4 className={`${revalia.className} text-center xl:w-[800px]`}>
+            <h4 className={`${revalia.className} text-center lg:w-[800px]`}>
               Here you can browse my latest projects. These are result of my
               hard work and everything I'll learn is translated into new project
               to practice new skills.

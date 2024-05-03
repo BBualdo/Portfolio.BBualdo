@@ -8,7 +8,7 @@ const Tech = () => {
 
   return (
     <div
-      className={`${revalia.className} flex flex-col gap-4 rounded-xl border-4 border-zinc-800 p-4 xl:p-10`}
+      className={`${revalia.className} flex w-full flex-col gap-4 rounded-xl border-4 border-zinc-800 p-4 lg:p-10`}
     >
       <div
         className={`${revalia.className} flex flex-col items-center gap-2 uppercase`}
@@ -24,14 +24,14 @@ const Tech = () => {
         {skills.map((skill) => (
           <li
             key={skill.id}
-            className="m-2 px-4 py-2 xs:max-xl:grid xl:inline-block"
+            className="m-2 inline-block px-4 py-2 xs:max-lg:grid"
             style={{ boxShadow: `0 4px 0 ${skill.color}` }}
           >
             <div className="flex items-center gap-2">
               <div className="relative h-[30px] w-[30px] xl:h-[50px] xl:w-[50px]">
                 <Image alt={skill.name} src={skill.imagePath} fill />
               </div>
-              <p className="text-xs xl:text-base">{skill.name}</p>
+              <p className="text-xs lg:text-sm xl:text-base">{skill.name}</p>
             </div>
           </li>
         ))}
