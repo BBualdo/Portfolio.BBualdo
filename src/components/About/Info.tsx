@@ -1,9 +1,19 @@
+"use client";
+
 import { revalia } from "@/utils/fonts";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/utils/fadeIn";
 
 const Info = () => {
   return (
-    <div className="flex-1">
+    <motion.div
+      variants={fadeIn("right", 0.5, 1, 0.7)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="flex-1"
+    >
       <div className="flex gap-4 xs:items-center xs:max-lg:flex-col lg:items-start">
         <Image
           alt="Sebastian's Photo"
@@ -97,7 +107,7 @@ const Info = () => {
           that coding, much like music, demands.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -5,6 +5,8 @@ import { useRef, useState } from "react";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import Popup from "./shared/Popup";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/utils/fadeIn";
 
 export default function Contact() {
   const [isCoppied, setIsCoppied] = useState<boolean>(false);
@@ -32,13 +34,33 @@ export default function Contact() {
       {isCoppied ? <Popup /> : null}
       <section id="contact" className={`${revalia.className} py-10 lg:py-20`}>
         <div className="flex flex-col justify-center gap-20">
-          <h2 className="title">Contact</h2>
+          <motion.h2
+            variants={fadeIn("down", 0.5, 1, 0.5)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="title"
+          >
+            Contact
+          </motion.h2>
           <div className="flex items-center gap-10 xs:max-lg:flex-col lg:mt-40">
-            <div className="flex-1">
+            <motion.div
+              variants={fadeIn("right", 0.5, 1, 1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="flex-1"
+            >
               <p className="text-center text-vicePink">Get in touch</p>
               <h3 className="text-4xl">Let's work together</h3>
-            </div>
-            <div className="flex flex-1 flex-col items-center gap-10">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("left", 0.5, 1, 1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="flex flex-1 flex-col items-center gap-10"
+            >
               <h3>How do you want to contact me?</h3>
               <div className="flex items-center justify-center gap-10 rounded-xl border p-10 text-white/50 lg:gap-14 xl:gap-20">
                 <a
@@ -53,11 +75,14 @@ export default function Contact() {
                 >
                   <FaLinkedin className="text-3xl lg:text-5xl" />
                 </a>
-                <button className="pointer border border-white/50 px-2 py-2 text-xs shadow-[0_4px_0] shadow-white/50 duration-200 hover:scale-110 hover:border-white hover:text-white hover:shadow-white hover:transition-all active:mt-2 active:shadow-none lg:px-4 lg:text-base lg:shadow-[0_8px_0] lg:active:mt-4">
+                <button
+                  onClick={copyEmail}
+                  className="pointer border border-white/50 px-2 py-2 text-xs shadow-[0_4px_0] shadow-white/50 duration-200 hover:scale-110 hover:border-white hover:text-white hover:shadow-white hover:transition-all active:mt-2 active:shadow-none lg:px-4 lg:text-base lg:shadow-[0_8px_0] lg:active:mt-4"
+                >
                   Copy Email
                 </button>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

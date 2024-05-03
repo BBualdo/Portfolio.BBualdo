@@ -1,8 +1,12 @@
+"use client";
+
 import { projects } from "@/constants/projects";
 import { revalia } from "@/utils/fonts";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import CTAAnchor from "./shared/CTAAnchor";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/utils/fadeIn";
 
 export default function Projects() {
   const projectsElement = projects.map((project, index) => {
@@ -10,7 +14,14 @@ export default function Projects() {
     const secondOrder = index % 2 == 0 ? 2 : 1;
 
     return (
-      <div key={project.id} className="flex rounded-xl border-4">
+      <motion.div
+        variants={fadeIn(`${firstOrder == 1 ? "right" : "left"}`, 0.2, 1, 1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        key={project.id}
+        className="flex rounded-xl border-4"
+      >
         <div
           className="relative flex-1 xs:max-lg:hidden"
           style={{ order: firstOrder }}
@@ -61,16 +72,30 @@ export default function Projects() {
             Finished: {project.finishDate}
           </p>
         </div>
-      </div>
+      </motion.div>
     );
   });
 
   return (
     <section id="projects" className="py-10 lg:py-20">
       <div className="flex flex-col gap-20">
-        <h2 className={`${revalia.className} title`}>Projects</h2>
+        <motion.h2
+          variants={fadeIn("down", 0.5, 1, 0.5)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className={`${revalia.className} title`}
+        >
+          Projects
+        </motion.h2>
         <div className="flex flex-col items-center gap-20">
-          <div className="flex flex-col items-center">
+          <motion.div
+            variants={fadeIn("down", 0.7, 1, 1)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="flex flex-col items-center"
+          >
             <h4 className={`${revalia.className} text-center lg:w-[800px]`}>
               Here you can browse my latest projects. These are result of my
               hard work and everything I'll learn is translated into new project
@@ -79,7 +104,7 @@ export default function Projects() {
             <CTAAnchor href="https://github.com/BBualdo?tab=repositories">
               View All Projects
             </CTAAnchor>
-          </div>
+          </motion.div>
           <div className="flex flex-col gap-20">{projectsElement}</div>
         </div>
       </div>

@@ -1,12 +1,23 @@
+"use client";
+
 import { revalia } from "@/utils/fonts";
 import CodeBackground from "./backgrounds/CodeBackground";
 import CTA from "./shared/CTA";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/utils/fadeIn";
 
 export default function Hero() {
   return (
     <>
       <CodeBackground />
-      <section id="hero" className={revalia.className}>
+      <motion.section
+        id="hero"
+        className={revalia.className}
+        variants={fadeIn("", 0.7, 1, 1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <div className="flex h-screen flex-col items-center justify-center gap-4">
           <h1>Sebastian Opozda</h1>
           <h2 className="uppercase">
@@ -14,7 +25,7 @@ export default function Hero() {
           </h2>
           <CTA href="projects">Check out my work</CTA>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }
