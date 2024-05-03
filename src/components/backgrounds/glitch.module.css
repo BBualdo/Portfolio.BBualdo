@@ -1,9 +1,9 @@
 .CodeBackground {
-  @apply absolute left-0 top-0 z-[-50] flex h-screen min-h-screen w-full items-center justify-center opacity-70;
+  @apply absolute left-0 top-0 z-[-50] flex h-screen min-h-screen w-full items-center justify-center overflow-hidden opacity-70;
 }
 
 .text {
-  @apply relative top-60 whitespace-nowrap text-[20rem] font-black text-black;
+  @apply relative top-52 whitespace-nowrap text-[10rem] font-black text-black xs:max-xl:right-24 xl:top-60 xl:text-[20rem];
   text-shadow:
     -2px 3px 0 rgb(0, 174, 255),
     2px -3px 0 rgb(255, 0, 157);

@@ -6,14 +6,15 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  screens: {
-    xs: "360px",
-    sm: "640px",
-    md: "768px",
-    lg: "960px",
-    xl: "1200px",
-  },
+
   theme: {
+    screens: {
+      xs: "360px",
+      sm: "640px",
+      md: "768px",
+      lg: "960px",
+      xl: "1440px",
+    },
     extend: {
       colors: {
         vicePink: "rgb(255, 0, 157)",

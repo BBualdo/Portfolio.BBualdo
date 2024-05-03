@@ -4,15 +4,15 @@ import { Link } from "react-scroll";
 
 import { HiHome } from "react-icons/hi";
 import { BsPersonFill } from "react-icons/bs";
-import { FaLaptopCode, FaLinkedin } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
 import { BiSolidMessageDetail } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
 
 export default function Nav() {
   return (
     <nav className="fixed bottom-16 z-50 w-full opacity-50 transition-all duration-500 hover:opacity-100">
-      <div className="gradient-bw mx-auto h-[70px] max-w-[440px] rounded-full p-1">
-        <div className="mx-auto flex h-full w-full items-center justify-center gap-10 rounded-full bg-black p-4 text-3xl text-white/50">
+      <div className="gradient-bw mx-auto h-[70px] max-w-[340px] rounded-full p-1 xl:max-w-[440px]">
+        <div className="mx-auto flex h-full w-full items-center justify-center gap-8 rounded-full bg-black p-4 text-2xl text-white/50 xl:gap-10 xl:text-3xl">
           <Link
             to="hero"
             smooth

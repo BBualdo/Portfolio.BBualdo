@@ -1,11 +1,10 @@
 import { revalia } from "@/utils/fonts";
-import getCodingTime from "@/utils/getCodingTime";
 import Image from "next/image";
 
 const Info = () => {
   return (
     <div className="flex-1">
-      <div className="flex items-start gap-4">
+      <div className="flex gap-4 xs:items-center xs:max-xl:flex-col xl:items-start">
         <Image
           alt="Sebastian's Photo"
           src="/photo.png"
@@ -26,7 +25,7 @@ const Info = () => {
           </h4>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-4 py-4 text-center text-lg">
+      <div className="text-md flex flex-col items-center gap-4 py-4 xs:max-xl:text-center xl:text-lg">
         <p>
           My journey into the world of development was sparked by my{" "}
           <span className="font-bold text-viceCyan">
