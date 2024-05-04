@@ -25,7 +25,7 @@ export default function Hero() {
           <h2 className="uppercase">
             I am a <span className="text-viceCyan">Web Developer</span>
           </h2>
-          <div className="mt-4 flex items-center gap-4 lg:mt-10">
+          <div className="mt-4 flex items-center gap-4 xs:max-lg:flex-col lg:mt-10">
             <CTA href="projects">Check out my work</CTA>
             <DownloadCV />
           </div>
