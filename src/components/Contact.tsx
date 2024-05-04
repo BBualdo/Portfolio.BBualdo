@@ -49,9 +49,9 @@ export default function Contact() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="flex-1"
+              className="flex flex-1 flex-col"
             >
-              <p className="text-center text-vicePink">Get in touch</p>
+              <p className="text-vicePink">Get in touch</p>
               <h3 className="text-4xl">Let&#39;s work together</h3>
             </motion.div>
             <motion.div
