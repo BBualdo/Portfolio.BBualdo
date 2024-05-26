@@ -123,7 +123,7 @@ export const skills: SkillType[] = [
   {
     id: 20,
     name: "RxJS",
-    imagePath: "/icons/RxJs.svg",
+    imagePath: "/icons/RxJS.svg",
     color: "#F80090"
   },
   {
