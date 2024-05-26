@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
 
 export default function Projects() {
-  const projectsElement = projects.map((project, index) => {
+  const projectsElement = [...projects].reverse().map((project, index) => {
     const firstOrder = index % 2 == 0 ? 1 : 2;
     const secondOrder = index % 2 == 0 ? 2 : 1;
 
