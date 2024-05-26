@@ -114,4 +114,29 @@ export const skills: SkillType[] = [
     imagePath: "/icons/UnitTesting.svg",
     color: "#0ACF83",
   },
+  {
+    id: 19,
+    name: "Angular",
+    imagePath: "/icons/Angular.svg",
+    color: "#B52E31"
+  },
+  {
+    id: 20,
+    name: "RxJS",
+    imagePath: "/icons/RxJs.svg",
+    color: "#F80090"
+  },
+  {
+    id: 21,
+    name: "Rider",
+    imagePath: "/icons/Rider.svg",
+    color: "#DD1265"
+  },
+  {
+    id: 22,
+    name: "WebStorm",
+    imagePath: "/icons/WebStorm.svg",
+    color: "#00CDD7"
+  }
+
 ];
