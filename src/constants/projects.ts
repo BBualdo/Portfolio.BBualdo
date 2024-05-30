@@ -114,12 +114,14 @@ export const projects: ProjectType[] = [
     type: "web",
     name: "Quiz Game",
     description:
-      "Fullstack Application where users can create Quizzes, play them selecting difficulty level which affects time for answer and track score in Leaderboard. It was a part of C# Academy Roadmap, but I extended it with own features.",
+      "Fullstack Application with ASP.NET Core Identity Authorization and Authentication, where users can create Quizzes, play them selecting difficulty level which affects time for answer and track score in Leaderboard. It was a part of C# Academy Roadmap, but I extended it with own features.",
     technologies: [
       "UI/UX Design",
       "Angular",
       "Mobile First",
       "C#",
+      "ASP.NET Identity",
+      "ILogger",
       "Entity Framework Core",
       "PostgreSQL",
       "Web API",
@@ -127,7 +129,7 @@ export const projects: ProjectType[] = [
       "TailwindCSS",
       "Angular Material"
     ],
-    finishDate: "26-05-2024",
+    finishDate: "30-05-2024",
     image: {
       console: "",
       desktop: "/screenshots/quiz-game/desktop.png",
