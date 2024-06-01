@@ -5,8 +5,7 @@ import CodeBackground from "./backgrounds/CodeBackground";
 import CTA from "./shared/CTA";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
-import CTAAnchor from "./shared/CTAAnchor";
-import DownloadCV from "./shared/DownloadCV";
+import PreviewCV from "./shared/PreviewCV";
 
 export default function Hero() {
   return (
@@ -27,7 +26,7 @@ export default function Hero() {
           </h2>
           <div className="mt-4 flex items-center gap-4 xs:max-lg:flex-col lg:mt-10">
             <CTA href="projects">Check out my work</CTA>
-            <DownloadCV />
+            <PreviewCV />
           </div>
         </div>
       </motion.section>
