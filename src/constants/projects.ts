@@ -26,7 +26,7 @@ export const projects: ProjectType[] = [
       "Framer Motion",
       "MUI",
     ],
-    finishDate: "09-12-2023",
+    finishDate: "09-12-2023 (in progress)",
     image: {
       console: "",
       desktop: "/screenshots/classcarsllc/desktop.png",
@@ -38,55 +38,6 @@ export const projects: ProjectType[] = [
   },
   {
     id: 2,
-    type: "web",
-    name: "Life is a Game",
-    description:
-      "An application where users can set missions for themselves, track their progress, and earn XP and levels based on the mission's difficulty level. The app also features a built-in achievement system. Currently, user data is stored in the browser's localStorage, but there are plans to expand it with a database and authentication.",
-    technologies: [
-      "UI/UX Design",
-      "NextJS",
-      "TypeScript",
-      "TailwindCSS",
-      "Framer Motion",
-      "Shadcn-UI",
-      "Zod",
-      "Redux Toolkit",
-    ],
-    finishDate: "23-01-2024 (Beta)",
-    image: {
-      console: "",
-      desktop: "/screenshots/liag/desktop.png",
-      mobile: "/screenshots/liag/mobile.png",
-    },
-    linkToRepo: "https://github.com/BBualdo/Life-is-a-Game",
-    linkToLive: "https://life-is-a-game.vercel.app",
-    slug: "/overview/liag",
-  },
-  {
-    id: 3,
-    type: "web",
-    name: "Salegency",
-    description:
-      "A simple landing page created for a client who runs a company that helps other businesses increase their revenue. Website has Cookiebot and Calendly extensions embedded.",
-    technologies: [
-      "UI/UX Design",
-      "Astro",
-      "TypeScript",
-      "TailwindCSS",
-      "Framer Motion",
-    ],
-    finishDate: "06-03-2024",
-    image: {
-      console: "",
-      desktop: "/screenshots/salegency/desktop.png",
-      mobile: "/screenshots/salegency/mobile.png",
-    },
-    linkToRepo: "https://github.com/BBualdo/salegency.co",
-    linkToLive: "https://salegency.co",
-    slug: "/overview/salegency",
-  },
-  {
-    id: 4,
     type: "console",
     name: "Shifts Logger",
     description:
@@ -110,7 +61,7 @@ export const projects: ProjectType[] = [
     slug: "/overview/shifts-logger",
   },
   {
-    id: 5,
+    id: 3,
     type: "web",
     name: "Quiz Game",
     description:
@@ -137,5 +88,64 @@ export const projects: ProjectType[] = [
     },
     linkToRepo: "https://github.com/BBualdo/QuizGame",
     slug: "/overview/quiz-game",
+  },
+  {
+    id: 4,
+    type: "web",
+    name: "Salegency",
+    description:
+      "A simple landing page created for a client who runs a company that helps other businesses increase their revenue. Website has Cookiebot and Calendly extensions embedded.",
+    technologies: [
+      "UI/UX Design",
+      "Astro",
+      "TypeScript",
+      "TailwindCSS",
+      "Framer Motion",
+    ],
+    finishDate: "06-03-2024",
+    image: {
+      console: "",
+      desktop: "/screenshots/salegency/desktop.png",
+      mobile: "/screenshots/salegency/mobile.png",
+    },
+    linkToRepo: "https://github.com/BBualdo/salegency.co",
+    linkToLive: "https://salegency.co",
+    slug: "/overview/salegency",
+  },
+  {
+    id: 5,
+    type: "web",
+    name: "Life is a Game",
+    description:
+      "App where authenticated users can manage self-assigned missions, get XP, Levels and Achievements. Used Next.js for folder-based routing and SSR, and ASP.NET Core for reliability and security.",
+    technologies: [
+      "UI/UX Design",
+      "NextJS",
+      "TypeScript",
+      "TailwindCSS",
+      "C#",
+      "Framer Motion",
+      "Shadcn-UI",
+      "Zod",
+      "Redux Toolkit",
+      "Redux-Persist",
+      "React-Hook-Form",
+      "Axios",
+      "ASP.NET",
+      "Entity Framework Core",
+      "ASP.NET Identity",
+      "SQL Server",
+      "xUnit",
+      "FakeItEasy",
+      "Azure"
+    ],
+    finishDate: "07-08-2024",
+    image: {
+      console: "",
+      desktop: "/screenshots/liag/desktop.png",
+      mobile: "/screenshots/liag/mobile.png",
+    },
+    linkToRepo: "https://github.com/BBualdo/Life-is-a-Game",
+    slug: "/overview/liag",
   },
 ];
