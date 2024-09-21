@@ -27,11 +27,13 @@ const Tech = () => {
         >
           <p>My Code Journey began:</p>
           <p className="text-center text-xl text-vicePink xl:text-3xl">
-            {years > 0 && `${years} years `}
-            {`${months} months ${days} days ago`}
+            {years > 1 ? `${years} years ` : years === 1 ? `${years} year ` : null}
+            {months > 1 ? `${months} months ` : months === 1 ? `${months} month ` : null}
+            {days > 1 ? `${days} days ` : days === 1 ? `${days} day ` : null}
+            ago
           </p>
         </div>
-        <h3>Tech</h3>
+        <h3 className="mt-2">Tech</h3>
         <ul>
           {skills.map((skill, index) => (
             <motion.li
