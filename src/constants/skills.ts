@@ -58,101 +58,58 @@ export const skills: SkillType[] = [
   },
   {
     id: 8,
-    name: "Sass",
-    imagePath: "/icons/Sass.svg",
-    color: "#CD6799",
-    priority: 3
-  },
-  {
-    id: 9,
     name: "Redux",
     imagePath: "/icons/Redux.svg",
     color: "#764ABC",
     priority: 3
   },
   {
-    id: 10,
+    id: 9,
     name: "NextJS",
     imagePath: "/icons/NextJS.svg",
     color: "#FFF",
     priority: 1
   },
   {
-    id: 11,
+    id: 10,
     name: "C#",
     imagePath: "/icons/CS.svg",
     color: "#512BD4",
     priority: 1
   },
   {
-    id: 12,
+    id: 11,
     name: ".NET",
     imagePath: "/icons/DotNet.svg",
     color: "#512BD4",
     priority: 1
   },
   {
-    id: 13,
-    name: "Astro",
-    imagePath: "/icons/Astro.svg",
-    color: "#FFF",
-    priority: 3
-  },
-  {
-    id: 14,
+    id: 12,
     name: "SQL",
     imagePath: "/icons/SQL.svg",
     color: "#FFF",
     priority: 2
   },
   {
-    id: 15,
-    name: "VS Code",
-    imagePath: "/icons/VSCode.svg",
-    color: "#1070B3",
-    priority: 3
-  },
-  {
-    id: 16,
-    name: "Visual Studio",
-    imagePath: "/icons/VisualStudio.svg",
-    color: "#5E438F",
-    priority: 3
-  },
-  {
-    id: 17,
+    id: 13,
     name: "Unit Testing",
     imagePath: "/icons/UnitTesting.svg",
     color: "#0ACF83",
     priority: 3
   },
   {
-    id: 18,
+    id: 14,
     name: "Angular",
     imagePath: "/icons/Angular.svg",
     color: "#B52E31",
     priority: 2
   },
   {
-    id: 19,
+    id: 15,
     name: "RxJS",
     imagePath: "/icons/RxJS.svg",
     color: "#F80090",
     priority: 3
   },
-  {
-    id: 20,
-    name: "Rider",
-    imagePath: "/icons/Rider.svg",
-    color: "#DD1265",
-    priority: 3
-  },
-  {
-    id: 21,
-    name: "WebStorm",
-    imagePath: "/icons/WebStorm.svg",
-    color: "#00CDD7",
-    priority: 3
-  }
-
 ];

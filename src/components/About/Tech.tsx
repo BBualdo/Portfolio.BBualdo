@@ -34,7 +34,7 @@ const Tech = () => {
           </p>
         </div>
         <h3 className="mt-2">Tech</h3>
-        <ul>
+        <ul className="xs:max-lg:grid grid-cols-2">
           {skills.sort((a, b) => a.priority - b.priority).map((skill, index) => (
             <motion.li
               variants={fadeIn("left", (index + 1) / 4, 1, 1)}
@@ -42,7 +42,7 @@ const Tech = () => {
               whileInView="show"
               viewport={{ once: true }}
               key={skill.id}
-              className="m-2 inline-block px-4 py-2 xs:max-lg:grid"
+              className="m-2 inline-block px-4 py-2"
               style={{ boxShadow: `0 4px 0 ${skill.color}` }}
             >
               <div className="flex items-center gap-2">
