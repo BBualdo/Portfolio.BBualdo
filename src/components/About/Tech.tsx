@@ -35,7 +35,7 @@ const Tech = () => {
         </div>
         <h3 className="mt-2">Tech</h3>
         <ul>
-          {skills.map((skill, index) => (
+          {skills.sort((a, b) => a.priority - b.priority).map((skill, index) => (
             <motion.li
               variants={fadeIn("left", (index + 1) / 4, 1, 1)}
               initial="hidden"
