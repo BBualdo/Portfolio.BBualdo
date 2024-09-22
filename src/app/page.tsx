@@ -8,7 +8,7 @@ import Nav from "@/components/shared/Nav";
 export default function Home() {
   return (
     <>
-      <main>
+      <main className="overflow-hidden">
         <Hero />
         <About />
         <Projects />
