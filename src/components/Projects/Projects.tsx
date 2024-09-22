@@ -21,7 +21,8 @@ export default function Projects() {
     const relatedTechnologies: { [key: string]: string[] } = {
       "React": ["React", "NextJS"],
       "C#": ["C#", "ASP.NET", "ASP.NET MVC", "ASP.NET Core", ".NET"],
-      "SQL": ["SQL", "SQL Server", "PostgreSQL", "ADO.NET", "Entity Framework Core", "SQLite"]
+      "SQL": ["SQL", "SQL Server", "PostgreSQL", "ADO.NET", "Entity Framework Core", "SQLite", "Dapper"],
+      "Azure": ["Azure", "Azure Functions", "Azure Communication Service"]
     };
 
     return projects.filter(project => currentFilters.every(filter => {
@@ -31,22 +32,20 @@ export default function Projects() {
   };
 
   const projectsElement = getFilteredProjects().map((project, index) => {
-    const firstOrder = index % 2 == 0 ? 1 : 2;
-    const secondOrder = index % 2 == 0 ? 2 : 1;
+    const order = index % 2 == 0 ? 1 : 2;
 
     return (
       <motion.div
-        variants={fadeIn(`${firstOrder == 1 ? "right" : "left"}`, 0.2, 1, 1)}
+        variants={fadeIn(`${order == 1 ? "right" : "left"}`, 0.2, 1, 1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
         key={project.id}
-        className="flex rounded-xl border-4"
+        className="flex rounded-xl border-4 flex-col lg:flex-row"
       >
         {project.image ? (
           <div
             className="relative flex-1 xs:max-lg:hidden"
-            style={{ order: firstOrder }}
           >
             <Image
               src={
@@ -61,9 +60,16 @@ export default function Projects() {
             />
           </div>
         ) : null}
+        {project.videoUrl ? (
+          <div className="flex-1">
+            <iframe className="w-full lg:h-full h-[300px] xs:max-lg:rounded-t-lg lg:rounded-l-lg xs:max-lg:border-b-2 lg:border-r-2 border-white" src={project.videoUrl}
+                    title={`${project.name} demo`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          </div>
+        ) : null}
         <div
           className="flex flex-1 flex-col gap-10 px-6 py-6 xl:px-10"
-          style={{ order: secondOrder }}
         >
           <p className="text-xl font-black uppercase text-viceCyan lg:text-2xl">
             {project.name}

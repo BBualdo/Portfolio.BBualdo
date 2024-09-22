@@ -35,10 +35,10 @@ const ProjectsFilter = ({ currentFilters, setCurrentFilters }: ProjectsFilterPro
       </button>
       <button
         onClick={() => setCurrentFilters([])}
-        className={`${currentFilters.length === 0 ? 'bg-viceCyan/50' : ''} flex items-center gap-2 rounded-xl border-2 border-viceCyan pointer bg-viceCyan/10 px-6 py-3 font-bold text-white shadow-[0_4px_0] shadow-viceCyan transition-all duration-200`}>
+        className={`${currentFilters.length === 0 ? 'bg-viceCyan/50' : ''} flex items-center justify-center gap-2 rounded-xl border-2 border-viceCyan pointer bg-viceCyan/10 px-6 py-3 font-bold text-white shadow-[0_4px_0] shadow-viceCyan transition-all duration-200`}>
         <BsStack className="text-2xl text-viceCyan" /> All
       </button>
-      {skills.filter(s => s.filterable).map(skill => (
+      {skills.filter(s => s.filterable).sort((a, b) => a.filterOrder! - b.filterOrder!).map(skill => (
         <button key={skill.id}
                 className="flex items-center justify-center gap-2 rounded-xl border-2 pointer px-4 py-2 font-bold text-white transition-all duration-200"
                 style={{ boxShadow: `0 4px 0 ${skill.color}`, borderColor: skill.color, backgroundColor: currentFilters.includes(skill.name) ? `rgba(${hexToRgb(skill.color)}, 0.5)` : '' }}
