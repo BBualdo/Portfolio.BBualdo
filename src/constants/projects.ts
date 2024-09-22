@@ -6,6 +6,7 @@ export type ProjectType = {
   technologies: string[];
   finishDate: string;
   image?: { console: string; desktop: string; mobile: string };
+  videoUrl?: string;
   linkToRepo: string;
   linkToLive?: string | null;
   slug: string;
@@ -121,11 +122,7 @@ export const projects: ProjectType[] = [
       "UI/UX Design",
     ],
     finishDate: "06-03-2024",
-    image: {
-      console: "",
-      desktop: "/screenshots/salegency/desktop.png",
-      mobile: "/screenshots/salegency/mobile.png",
-    },
+    videoUrl: "https://www.youtube.com/embed/vdQhW1QyMhE?si=-jy_YTcupnKRtKHd",
     linkToRepo: "https://github.com/BBualdo/salegency.co",
     linkToLive: "https://salegency.co",
     slug: "/salegency",
@@ -163,11 +160,6 @@ export const projects: ProjectType[] = [
       "Simple Console Math Game where user selects which operations he wants to be asked about and has to answer them.",
     technologies: ["C#"],
     finishDate: "06-04-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/MathGame",
     slug: "/math-game",
   },
@@ -179,11 +171,6 @@ export const projects: ProjectType[] = [
       "Simple C# Console calculator.",
     technologies: ["C#"],
     finishDate: "07-04-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/Calculator",
     slug: "/calculator",
   },
@@ -195,11 +182,6 @@ export const projects: ProjectType[] = [
       "CRUD App connected to SQLite where user can create own habits and track them.",
     technologies: ["C#", "ADO.NET", "SQLite"],
     finishDate: "11-04-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/HabitLogger",
     slug: "/habit-logger",
   },
@@ -211,11 +193,7 @@ export const projects: ProjectType[] = [
       "CRUD app that let's user track his coding time, set goals and get summary reports for specified period.",
     technologies: ["C#", "SQLite", "Dapper", "Spectre Console"],
     finishDate: "13-04-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
+  
     linkToRepo: "https://github.com/BBualdo/CodingTracker",
     slug: "/coding-tracker",
   },
@@ -227,11 +205,6 @@ export const projects: ProjectType[] = [
       "CRUD App where user can create stacks of flashcards and perform score based study sessions.",
     technologies: ["C#", "SQL Server", "Dapper", "Spectre Console"],
     finishDate: "16-04-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/Flashcards",
     slug: "/flashcards",
   },
@@ -243,11 +216,6 @@ export const projects: ProjectType[] = [
       "Simple App which calls CocktailDB API and lets user get info about drink filtered by categories.",
     technologies: ["C#", "Spectre Console", "CocktailDB API"],
     finishDate: "17-04-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/DrinksInfo",
     slug: "/drinks-info",
   },
@@ -259,11 +227,6 @@ export const projects: ProjectType[] = [
       "Console App where user can create contacts and add them to groups. All operations supports CRUD with Entity Framework Core and SQL Server.",
     technologies: ["C#", "SQL Server", "Entity Framework Core", "Spectre Console"],
     finishDate: "18-04-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/PhoneBook",
     slug: "/phonebook",
   },
@@ -275,11 +238,6 @@ export const projects: ProjectType[] = [
       "Entity Framework Core with SQL Server CRUD App that let's user track their exercise time. Purpose of this challenge was to use Repository Pattern.",
     technologies: ["C#", "SQL Server", "Entity Framework Core", "ASP.NET", "Web API", "Swagger", "Spectre Console"],
     finishDate: "21-04-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/ExerciseTracker",
     slug: "/exercise-tracker",
   },
@@ -291,11 +249,6 @@ export const projects: ProjectType[] = [
       "Simple Script that scraps NBA games results and sends it via email to user every day.",
     technologies: ["C#", "Html Agility Pack", "SMTP"],
     finishDate: "23-04-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/SportsResultsNotifier",
     slug: "/sport-results-notifier",
   },
@@ -307,11 +260,6 @@ export const projects: ProjectType[] = [
       "Application which reads people data from Excel and saves it to SQL Server database.",
     technologies: ["C#", "SQL Server", "Entity Framework Core", "EPPlus", "Spectre Console"],
     finishDate: "23-04-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/ExcelReader",
     slug: "/excel-reader",
   },
@@ -323,11 +271,6 @@ export const projects: ProjectType[] = [
       "",
     technologies: ["Angular", "TypeScript", "C#", "PostgreSQL", "Entity Framework Core", "ASP.NET", "Web API"],
     finishDate: "10-05-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/NoSmoking",
     slug: "/no-smoking",
   },
@@ -339,11 +282,6 @@ export const projects: ProjectType[] = [
       "Sleep Tracker is an application designed to help users monitor their sleep patterns. Users can conveniently track their sleep time by either setting a timer or managing their sleep data manually through CRUD operations.",
     technologies: ["Angular", "TypeScript", "C#", "PostgreSQL", "Entity Framework Core", "ASP.NET", "Web API", "Angular Material", "Sass"],
     finishDate: "25-05-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/SleepTracker",
     slug: "/sleep-tracker",
   },
@@ -355,11 +293,6 @@ export const projects: ProjectType[] = [
       "Simple Product Management System app with Role-Based Authentication and Authorization, where user can browse, create, update and delete products and admin can do the same with users.",
     technologies: ["Angular", "TypeScript", "C#", "PostgreSQL", "Entity Framework Core", "FluentAPI", "ASP.NET", "Web API", "ASP.NET Identity", "Angular Material", "TailwindCSS", "PapercutSMTP"],
     finishDate: "10-06-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/PMS",
     slug: "/pms",
   },
@@ -371,11 +304,6 @@ export const projects: ProjectType[] = [
       "",
     technologies: ["Blazor", "C#", "PostgreSQL", "Entity Framework Core"],
     finishDate: "25-06-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/Wardrobe",
     slug: "/wardrobe",
   },
@@ -387,11 +315,6 @@ export const projects: ProjectType[] = [
       "App where user can select difficulty and try to match all card pairs. Scores are saved to SQL database and user can view the records.",
     technologies: ["Blazor", "C#", "PostgreSQL", "Entity Framework Core", "TailwindCSS"],
     finishDate: "27-06-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/BlazorMemoryGame",
     slug: "/sage-memo",
   },
@@ -403,11 +326,6 @@ export const projects: ProjectType[] = [
       "",
     technologies: ["React", "TypeScript", "C#", "PostgreSQL", "Entity Framework Core", "ASP.NET", "Web API", "TailwindCSS"],
     finishDate: "29-06-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/ShoppingList",
     slug: "/shopping-list",
   },
@@ -419,11 +337,6 @@ export const projects: ProjectType[] = [
       "",
     technologies: ["NextJS", "TypeScript", "C#", "PostgreSQL", "Entity Framework Core", "Axios", "ASP.NET", "Web API", "Recoil", "TailwindCSS"],
     finishDate: "03-07-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/FriendsManager",
     slug: "/friends-manager",
   },
@@ -435,11 +348,6 @@ export const projects: ProjectType[] = [
       "This project is an implementation of an order processing system using Azure Functions. It demonstrates the use of various Azure Function triggers to automate the order processing workflow from receiving orders to sending notifications and updating the inventory.",
     technologies: ["Azure Functions", "C#", "CosmosDB", "Azure Storage Emulator", "PapercutSMTP"],
     finishDate: "03-08-2024",
-    image: {
-      console: "",
-      desktop: "",
-      mobile: "",
-    },
     linkToRepo: "https://github.com/BBualdo/AzureFunctions.BBualdo",
     slug: "/azure-functions",
   },
