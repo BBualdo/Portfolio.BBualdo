@@ -9,6 +9,7 @@ export type ProjectType = {
   linkToRepo: string;
   linkToLive?: string | null;
   slug: string;
+  highlighted?: boolean;
 };
 
 export const projects: ProjectType[] = [
@@ -35,85 +36,10 @@ export const projects: ProjectType[] = [
     linkToRepo: "https://github.com/BBualdo/class-cars-llc",
     linkToLive: "https://classcarsllc.com",
     slug: "/overview/classcarsllc",
+    highlighted: true
   },
   {
     id: 2,
-    type: "console",
-    name: "Shifts Logger",
-    description:
-      "Simple CRUD Console Application where user can manage employees shifts. It was a part of C# Academy Roadmap.",
-    technologies: [
-      "C#",
-      "Entity Framework Core",
-      "SQL Server",
-      "Web API",
-      "Swagger",
-      "Spectre Console",
-      "CRUD",
-    ],
-    finishDate: "20-04-2024",
-    image: {
-      console: "/screenshots/shifts-logger/console.png",
-      desktop: "",
-      mobile: "",
-    },
-    linkToRepo: "https://github.com/BBualdo/ShiftsLogger.BBualdo",
-    slug: "/overview/shifts-logger",
-  },
-  {
-    id: 3,
-    type: "web",
-    name: "Quiz Game",
-    description:
-      "Fullstack Application with ASP.NET Core Identity Authorization and Authentication, where users can create Quizzes, play them selecting difficulty level which affects time for answer and track score in Leaderboard. It was a part of C# Academy Roadmap, but I extended it with own features.",
-    technologies: [
-      "UI/UX Design",
-      "Angular",
-      "Mobile First",
-      "C#",
-      "ASP.NET Identity",
-      "ILogger",
-      "Entity Framework Core",
-      "PostgreSQL",
-      "Web API",
-      "Swagger",
-      "TailwindCSS",
-      "Angular Material"
-    ],
-    finishDate: "30-05-2024",
-    image: {
-      console: "",
-      desktop: "/screenshots/quiz-game/desktop.png",
-      mobile: "",
-    },
-    linkToRepo: "https://github.com/BBualdo/QuizGame",
-    slug: "/overview/quiz-game",
-  },
-  {
-    id: 4,
-    type: "web",
-    name: "Salegency",
-    description:
-      "A simple landing page created for a client who runs a company that helps other businesses increase their revenue. Website has Cookiebot and Calendly extensions embedded.",
-    technologies: [
-      "UI/UX Design",
-      "Astro",
-      "TypeScript",
-      "TailwindCSS",
-      "Framer Motion",
-    ],
-    finishDate: "06-03-2024",
-    image: {
-      console: "",
-      desktop: "/screenshots/salegency/desktop.png",
-      mobile: "/screenshots/salegency/mobile.png",
-    },
-    linkToRepo: "https://github.com/BBualdo/salegency.co",
-    linkToLive: "https://salegency.co",
-    slug: "/overview/salegency",
-  },
-  {
-    id: 5,
     type: "web",
     name: "Life is a Game",
     description:
@@ -147,5 +73,86 @@ export const projects: ProjectType[] = [
     },
     linkToRepo: "https://github.com/BBualdo/Life-is-a-Game",
     slug: "/overview/liag",
+    highlighted: true
+  },
+  {
+    id: 3,
+    type: "web",
+    name: "Squizz",
+    description:
+      "Fullstack Application with ASP.NET Core Identity Authorization and Authentication, where users can create Quizzes, play them selecting difficulty level which affects time for answer and track score in Leaderboard. It was a part of C# Academy Roadmap, but I extended it with own features.",
+    technologies: [
+      "UI/UX Design",
+      "Angular",
+      "TypeScript",
+      "Mobile First",
+      "C#",
+      "ASP.NET Identity",
+      "ILogger",
+      "Entity Framework Core",
+      "PostgreSQL",
+      "Web API",
+      "Swagger",
+      "TailwindCSS",
+      "Angular Material"
+    ],
+    finishDate: "30-05-2024",
+    image: {
+      console: "",
+      desktop: "/screenshots/quiz-game/desktop.png",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/QuizGame",
+    slug: "/overview/quiz-game",
+    highlighted: true
+  },
+  {
+    id: 4,
+    type: "web",
+    name: "Salegency",
+    description:
+      "A simple landing page created for a client who runs a company that helps other businesses increase their revenue. Website has Cookiebot and Calendly extensions embedded.",
+    technologies: [
+      "UI/UX Design",
+      "Astro",
+      "TypeScript",
+      "TailwindCSS",
+      "Framer Motion",
+    ],
+    finishDate: "06-03-2024",
+    image: {
+      console: "",
+      desktop: "/screenshots/salegency/desktop.png",
+      mobile: "/screenshots/salegency/mobile.png",
+    },
+    linkToRepo: "https://github.com/BBualdo/salegency.co",
+    linkToLive: "https://salegency.co",
+    slug: "/overview/salegency",
+    highlighted: true
+  },
+  {
+    id: 5,
+    type: "console",
+    name: "Shifts Logger",
+    description:
+      "Simple CRUD Console Application where user can manage employees shifts. It was a part of C# Academy Roadmap.",
+    technologies: [
+      "C#",
+      "Entity Framework Core",
+      "SQL Server",
+      "Web API",
+      "Swagger",
+      "Spectre Console",
+      "CRUD",
+    ],
+    finishDate: "20-04-2024",
+    image: {
+      console: "/screenshots/shifts-logger/console.png",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/ShiftsLogger.BBualdo",
+    slug: "/overview/shifts-logger",
+    highlighted: true
   },
 ];

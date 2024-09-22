@@ -1,15 +1,36 @@
 "use client";
 
-import { projects } from "@/constants/projects";
+import { projects, ProjectType } from "@/constants/projects";
 import { revalia } from "@/utils/fonts";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import CTAAnchor from "./shared/CTAAnchor";
+import CTAAnchor from "../shared/CTAAnchor";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
+import ProjectsFilter from "@/components/Projects/ProjectsFilter";
+import { useState } from "react";
 
 export default function Projects() {
-  const projectsElement = [...projects].reverse().map((project, index) => {
+  const [currentFilters, setCurrentFilters] = useState<string[]>(['highlighted']);
+
+
+  const getFilteredProjects = () : ProjectType[] => {
+    if (currentFilters.includes('highlighted')) return projects.filter(project => project.highlighted);
+    if (currentFilters.length === 0) return projects;
+
+    const relatedTechnologies: { [key: string]: string[] } = {
+      "React": ["React", "NextJS"],
+      "C#": ["C#", "ASP.NET", "ASP.NET MVC", "ASP.NET Core", ".NET"],
+      "SQL": ["SQL", "SQL Server", "PostgreSQL", "ADO.NET", "Entity Framework Core", "SQLite"]
+    }
+
+    return projects.filter(project => currentFilters.every(filter => {
+      const technologies = relatedTechnologies[filter] || [filter]
+      return project.technologies.some(tech => technologies.includes(tech));
+    }))
+  };
+
+  const projectsElement = getFilteredProjects().map((project, index) => {
     const firstOrder = index % 2 == 0 ? 1 : 2;
     const secondOrder = index % 2 == 0 ? 2 : 1;
 
@@ -127,6 +148,9 @@ export default function Projects() {
               </CTAAnchor>
             </div>
           </motion.div>
+          <div>
+            <ProjectsFilter currentFilters={currentFilters} setCurrentFilters={setCurrentFilters} />
+          </div>
           <div className="flex flex-col gap-20">{projectsElement}</div>
         </div>
       </div>
