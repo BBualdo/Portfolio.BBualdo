@@ -5,6 +5,7 @@ export type SkillType = {
   color: string;
   priority: number;
   filterable?: boolean;
+  filterOrder?: number;
 };
 
 export const skills: SkillType[] = [
@@ -35,7 +36,8 @@ export const skills: SkillType[] = [
     imagePath: "/icons/React.svg",
     color: "#00D8FF",
     priority: 1,
-    filterable: true
+    filterable: true,
+    filterOrder: 1,
   },
   {
     id: 5,
@@ -50,7 +52,8 @@ export const skills: SkillType[] = [
     imagePath: "/icons/TypeScript.svg",
     color: "#007ACC",
     priority: 1,
-    filterable: true
+    filterable: true,
+    filterOrder: 4,
   },
   {
     id: 7,
@@ -72,7 +75,8 @@ export const skills: SkillType[] = [
     imagePath: "/icons/CS.svg",
     color: "#512BD4",
     priority: 1,
-    filterable: true
+    filterable: true,
+    filterOrder: 5,
   },
   {
     id: 10,
@@ -87,7 +91,8 @@ export const skills: SkillType[] = [
     imagePath: "/icons/SQL.svg",
     color: "#FFFFFF",
     priority: 2,
-    filterable: true
+    filterable: true,
+    filterOrder: 6,
   },
   {
     id: 12,
@@ -102,7 +107,8 @@ export const skills: SkillType[] = [
     imagePath: "/icons/Angular.svg",
     color: "#B52E31",
     priority: 2,
-    filterable: true
+    filterable: true,
+    filterOrder: 2,
   },
   {
     id: 14,
@@ -110,5 +116,23 @@ export const skills: SkillType[] = [
     imagePath: "/icons/RxJS.svg",
     color: "#F80090",
     priority: 3
+  },
+  {
+    id: 15,
+    name: "Azure",
+    imagePath: "/icons/Azure.svg",
+    color: "#0078D4",
+    priority: 1.2,
+    filterable: true,
+    filterOrder: 7,
+  },
+  {
+    id: 16,
+    name: "Blazor",
+    imagePath: "/icons/Blazor.svg",
+    color: "#702AF7",
+    priority: 2,
+    filterable: true,
+    filterOrder: 3,
   },
 ];

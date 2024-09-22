@@ -16,16 +16,16 @@ export const projects: ProjectType[] = [
   {
     id: 1,
     type: "web",
-    name: "ClassCarsLLC",
+    name: "ClassCars LLC",
     description:
       "A website created for a client specializing in importing cars from Dubai. The site includes several subpages with separate functionalities such as FAQ Accordion, Image Slider, Contact Form, etc.",
     technologies: [
-      "UI/UX Design",
       "NextJS",
       "TypeScript",
       "TailwindCSS",
       "Framer Motion",
       "MUI",
+      "UI/UX Design",
     ],
     finishDate: "09-12-2023 (in progress)",
     image: {
@@ -35,7 +35,7 @@ export const projects: ProjectType[] = [
     },
     linkToRepo: "https://github.com/BBualdo/class-cars-llc",
     linkToLive: "https://classcarsllc.com",
-    slug: "/overview/classcarsllc",
+    slug: "/classcarsllc",
     highlighted: true
   },
   {
@@ -45,25 +45,25 @@ export const projects: ProjectType[] = [
     description:
       "App where authenticated users can manage self-assigned missions, get XP, Levels and Achievements. Used Next.js for folder-based routing and SSR, and ASP.NET Core for reliability and security.",
     technologies: [
-      "UI/UX Design",
       "NextJS",
       "TypeScript",
-      "TailwindCSS",
       "C#",
-      "Framer Motion",
-      "Shadcn-UI",
+      "SQL Server",
+      "ASP.NET Core",
+      "Entity Framework Core",
       "Zod",
       "Redux Toolkit",
       "Redux-Persist",
       "React-Hook-Form",
       "Axios",
-      "ASP.NET",
-      "Entity Framework Core",
       "ASP.NET Identity",
-      "SQL Server",
       "xUnit",
       "FakeItEasy",
-      "Azure"
+      "Azure Communication Service",
+      "TailwindCSS",
+      "Framer Motion",
+      "Shadcn-UI",
+      "UI/UX Design",
     ],
     finishDate: "07-08-2024",
     image: {
@@ -72,7 +72,7 @@ export const projects: ProjectType[] = [
       mobile: "/screenshots/liag/mobile.png",
     },
     linkToRepo: "https://github.com/BBualdo/Life-is-a-Game",
-    slug: "/overview/liag",
+    slug: "/liag",
     highlighted: true
   },
   {
@@ -82,19 +82,20 @@ export const projects: ProjectType[] = [
     description:
       "Fullstack Application with ASP.NET Core Identity Authorization and Authentication, where users can create Quizzes, play them selecting difficulty level which affects time for answer and track score in Leaderboard. It was a part of C# Academy Roadmap, but I extended it with own features.",
     technologies: [
-      "UI/UX Design",
+
       "Angular",
       "TypeScript",
       "Mobile First",
       "C#",
-      "ASP.NET Identity",
-      "ILogger",
-      "Entity Framework Core",
       "PostgreSQL",
+      "Entity Framework Core",
+      "ASP.NET Identity",
+      "Logging",
       "Web API",
       "Swagger",
       "TailwindCSS",
-      "Angular Material"
+      "Angular Material",
+      "UI/UX Design",
     ],
     finishDate: "30-05-2024",
     image: {
@@ -103,7 +104,7 @@ export const projects: ProjectType[] = [
       mobile: "",
     },
     linkToRepo: "https://github.com/BBualdo/QuizGame",
-    slug: "/overview/quiz-game",
+    slug: "/quiz-game",
     highlighted: true
   },
   {
@@ -113,11 +114,11 @@ export const projects: ProjectType[] = [
     description:
       "A simple landing page created for a client who runs a company that helps other businesses increase their revenue. Website has Cookiebot and Calendly extensions embedded.",
     technologies: [
-      "UI/UX Design",
       "Astro",
       "TypeScript",
       "TailwindCSS",
       "Framer Motion",
+      "UI/UX Design",
     ],
     finishDate: "06-03-2024",
     image: {
@@ -127,7 +128,7 @@ export const projects: ProjectType[] = [
     },
     linkToRepo: "https://github.com/BBualdo/salegency.co",
     linkToLive: "https://salegency.co",
-    slug: "/overview/salegency",
+    slug: "/salegency",
     highlighted: true
   },
   {
@@ -135,15 +136,14 @@ export const projects: ProjectType[] = [
     type: "console",
     name: "Shifts Logger",
     description:
-      "Simple CRUD Console Application where user can manage employees shifts. It was a part of C# Academy Roadmap.",
+      "Entity Framework Core and SQL Server app which connects to Web API to CRUD employee shifts time.",
     technologies: [
       "C#",
-      "Entity Framework Core",
       "SQL Server",
+      "Entity Framework Core",
       "Web API",
       "Swagger",
       "Spectre Console",
-      "CRUD",
     ],
     finishDate: "20-04-2024",
     image: {
@@ -151,8 +151,296 @@ export const projects: ProjectType[] = [
       desktop: "",
       mobile: "",
     },
-    linkToRepo: "https://github.com/BBualdo/ShiftsLogger.BBualdo",
-    slug: "/overview/shifts-logger",
+    linkToRepo: "https://github.com/BBualdo/ShiftsLogger",
+    slug: "/shifts-logger",
     highlighted: true
+  },
+  {
+    id: 6,
+    type: "console",
+    name: "Math Game",
+    description:
+      "Simple Console Math Game where user selects which operations he wants to be asked about and has to answer them.",
+    technologies: ["C#"],
+    finishDate: "06-04-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/MathGame",
+    slug: "/math-game",
+  },
+  {
+    id: 7,
+    type: "console",
+    name: "Calculator",
+    description:
+      "Simple C# Console calculator.",
+    technologies: ["C#"],
+    finishDate: "07-04-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/Calculator",
+    slug: "/calculator",
+  },
+  {
+    id: 8,
+    type: "console",
+    name: "Habit Logger",
+    description:
+      "CRUD App connected to SQLite where user can create own habits and track them.",
+    technologies: ["C#", "ADO.NET", "SQLite"],
+    finishDate: "11-04-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/HabitLogger",
+    slug: "/habit-logger",
+  },
+  {
+    id: 9,
+    type: "console",
+    name: "Coding Tracker",
+    description:
+      "CRUD app that let's user track his coding time, set goals and get summary reports for specified period.",
+    technologies: ["C#", "SQLite", "Dapper", "Spectre Console"],
+    finishDate: "13-04-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/CodingTracker",
+    slug: "/coding-tracker",
+  },
+  {
+    id: 10,
+    type: "console",
+    name: "Flashcards",
+    description:
+      "CRUD App where user can create stacks of flashcards and perform score based study sessions.",
+    technologies: ["C#", "SQL Server", "Dapper", "Spectre Console"],
+    finishDate: "16-04-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/Flashcards",
+    slug: "/flashcards",
+  },
+  {
+    id: 11,
+    type: "console",
+    name: "Drinks Info",
+    description:
+      "Simple App which calls CocktailDB API and lets user get info about drink filtered by categories.",
+    technologies: ["C#", "Spectre Console", "CocktailDB API"],
+    finishDate: "17-04-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/DrinksInfo",
+    slug: "/drinks-info",
+  },
+  {
+    id: 12,
+    type: "console",
+    name: "Phone Book",
+    description:
+      "Console App where user can create contacts and add them to groups. All operations supports CRUD with Entity Framework Core and SQL Server.",
+    technologies: ["C#", "SQL Server", "Entity Framework Core", "Spectre Console"],
+    finishDate: "18-04-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/PhoneBook",
+    slug: "/phonebook",
+  },
+  {
+    id: 13,
+    type: "console",
+    name: "Exercise Tracker",
+    description:
+      "Entity Framework Core with SQL Server CRUD App that let's user track their exercise time. Purpose of this challenge was to use Repository Pattern.",
+    technologies: ["C#", "SQL Server", "Entity Framework Core", "ASP.NET", "Web API", "Swagger", "Spectre Console"],
+    finishDate: "21-04-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/ExerciseTracker",
+    slug: "/exercise-tracker",
+  },
+  {
+    id: 14,
+    type: "console",
+    name: "Sport Results Notifier",
+    description:
+      "Simple Script that scraps NBA games results and sends it via email to user every day.",
+    technologies: ["C#", "Html Agility Pack", "SMTP"],
+    finishDate: "23-04-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/SportsResultsNotifier",
+    slug: "/sport-results-notifier",
+  },
+  {
+    id: 15,
+    type: "console",
+    name: "Excel Reader",
+    description:
+      "Application which reads people data from Excel and saves it to SQL Server database.",
+    technologies: ["C#", "SQL Server", "Entity Framework Core", "EPPlus", "Spectre Console"],
+    finishDate: "23-04-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/ExcelReader",
+    slug: "/excel-reader",
+  },
+  {
+    id: 16,
+    type: "web",
+    name: "No Smoking",
+    description:
+      "",
+    technologies: ["Angular", "TypeScript", "C#", "PostgreSQL", "Entity Framework Core", "ASP.NET", "Web API"],
+    finishDate: "10-05-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/NoSmoking",
+    slug: "/no-smoking",
+  },
+  {
+    id: 18,
+    type: "web",
+    name: "Sleep Tracker",
+    description:
+      "Sleep Tracker is an application designed to help users monitor their sleep patterns. Users can conveniently track their sleep time by either setting a timer or managing their sleep data manually through CRUD operations.",
+    technologies: ["Angular", "TypeScript", "C#", "PostgreSQL", "Entity Framework Core", "ASP.NET", "Web API", "Angular Material", "Sass"],
+    finishDate: "25-05-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/SleepTracker",
+    slug: "/sleep-tracker",
+  },
+  {
+    id: 19,
+    type: "web",
+    name: "Product Management System",
+    description:
+      "Simple Product Management System app with Role-Based Authentication and Authorization, where user can browse, create, update and delete products and admin can do the same with users.",
+    technologies: ["Angular", "TypeScript", "C#", "PostgreSQL", "Entity Framework Core", "FluentAPI", "ASP.NET", "Web API", "ASP.NET Identity", "Angular Material", "TailwindCSS", "PapercutSMTP"],
+    finishDate: "10-06-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/PMS",
+    slug: "/pms",
+  },
+  {
+    id: 20,
+    type: "web",
+    name: "Wardrobe Inventory",
+    description:
+      "",
+    technologies: ["Blazor", "C#", "PostgreSQL", "Entity Framework Core"],
+    finishDate: "25-06-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/Wardrobe",
+    slug: "/wardrobe",
+  },
+  {
+    id: 21,
+    type: "web",
+    name: "Sage Memo",
+    description:
+      "App where user can select difficulty and try to match all card pairs. Scores are saved to SQL database and user can view the records.",
+    technologies: ["Blazor", "C#", "PostgreSQL", "Entity Framework Core", "TailwindCSS"],
+    finishDate: "27-06-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/BlazorMemoryGame",
+    slug: "/sage-memo",
+  },
+  {
+    id: 22,
+    type: "web",
+    name: "Shopping List",
+    description:
+      "",
+    technologies: ["React", "TypeScript", "C#", "PostgreSQL", "Entity Framework Core", "ASP.NET", "Web API", "TailwindCSS"],
+    finishDate: "29-06-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/ShoppingList",
+    slug: "/shopping-list",
+  },
+  {
+    id: 23,
+    type: "web",
+    name: "Friends Manager",
+    description:
+      "",
+    technologies: ["NextJS", "TypeScript", "C#", "PostgreSQL", "Entity Framework Core", "Axios", "ASP.NET", "Web API", "Recoil", "TailwindCSS"],
+    finishDate: "03-07-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/FriendsManager",
+    slug: "/friends-manager",
+  },
+  {
+    id: 24,
+    type: "console",
+    name: "Order Processing System",
+    description:
+      "This project is an implementation of an order processing system using Azure Functions. It demonstrates the use of various Azure Function triggers to automate the order processing workflow from receiving orders to sending notifications and updating the inventory.",
+    technologies: ["Azure Functions", "C#", "CosmosDB", "Azure Storage Emulator", "PapercutSMTP"],
+    finishDate: "03-08-2024",
+    image: {
+      console: "",
+      desktop: "",
+      mobile: "",
+    },
+    linkToRepo: "https://github.com/BBualdo/AzureFunctions.BBualdo",
+    slug: "/azure-functions",
   },
 ];

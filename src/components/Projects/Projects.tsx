@@ -21,7 +21,8 @@ export default function Projects() {
     const relatedTechnologies: { [key: string]: string[] } = {
       "React": ["React", "NextJS"],
       "C#": ["C#", "ASP.NET", "ASP.NET MVC", "ASP.NET Core", ".NET"],
-      "SQL": ["SQL", "SQL Server", "PostgreSQL", "ADO.NET", "Entity Framework Core", "SQLite"]
+      "SQL": ["SQL", "SQL Server", "PostgreSQL", "ADO.NET", "Entity Framework Core", "SQLite", "Dapper"],
+      "Azure": ["Azure", "Azure Functions", "Azure Communication Service"]
     };
 
     return projects.filter(project => currentFilters.every(filter => {
