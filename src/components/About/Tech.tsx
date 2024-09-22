@@ -27,20 +27,22 @@ const Tech = () => {
         >
           <p>My Code Journey began:</p>
           <p className="text-center text-xl text-vicePink xl:text-3xl">
-            {years > 0 && `${years} years `}
-            {`${months} months ${days} days ago`}
+            {years > 1 ? `${years} years ` : years === 1 ? `${years} year ` : null}
+            {months > 1 ? `${months} months ` : months === 1 ? `${months} month ` : null}
+            {days > 1 ? `${days} days ` : days === 1 ? `${days} day ` : null}
+            ago
           </p>
         </div>
-        <h3>Tech</h3>
-        <ul>
-          {skills.map((skill, index) => (
+        <h3 className="mt-2">Tech</h3>
+        <ul className="xs:max-lg:grid grid-cols-2">
+          {skills.sort((a, b) => a.priority - b.priority).map((skill, index) => (
             <motion.li
               variants={fadeIn("left", (index + 1) / 4, 1, 1)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
               key={skill.id}
-              className="m-2 inline-block px-4 py-2 xs:max-lg:grid"
+              className="m-2 inline-block px-4 py-2"
               style={{ boxShadow: `0 4px 0 ${skill.color}` }}
             >
               <div className="flex items-center gap-2">

@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
 
 export default function Contact() {
-  const [isCoppied, setIsCoppied] = useState<boolean>(false);
+  const [isCopied, setIsCopied] = useState<boolean>(false);
   const timeoutRef = useRef<any>();
 
   const copyEmail = () => {
@@ -20,10 +20,10 @@ export default function Contact() {
     }
 
     navigator.clipboard.writeText(email).then(() => {
-      setIsCoppied(true);
+      setIsCopied(true);
 
       timeoutRef.current = setTimeout(() => {
-        setIsCoppied(false);
+        setIsCopied(false);
         timeoutRef.current = null;
       }, 2000);
     });
@@ -31,7 +31,7 @@ export default function Contact() {
 
   return (
     <>
-      {isCoppied ? <Popup /> : null}
+      {isCopied ? <Popup /> : null}
       <section id="contact" className={`${revalia.className} py-10 lg:py-20`}>
         <div className="flex flex-col justify-center gap-20">
           <motion.h2
@@ -51,7 +51,7 @@ export default function Contact() {
               viewport={{ once: true }}
               className="flex flex-1 flex-col"
             >
-              <p className="text-vicePink">Get in touch</p>
+              <p className="text-vicePink xs:max-lg:text-center">Get in touch</p>
               <h3 className="text-4xl">Let&#39;s work together</h3>
             </motion.div>
             <motion.div
