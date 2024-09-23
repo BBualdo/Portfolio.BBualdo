@@ -67,11 +67,7 @@ export const projects: ProjectType[] = [
       "UI/UX Design",
     ],
     finishDate: "07-08-2024",
-    image: {
-      console: "",
-      desktop: "/screenshots/liag/desktop.png",
-      mobile: "/screenshots/liag/mobile.png",
-    },
+    videoUrl: "https://www.youtube.com/embed/aBJ_5aZJe8s?si=PYSZBl-fMwPp0XLL",
     linkToRepo: "https://github.com/BBualdo/Life-is-a-Game",
     slug: "/liag",
     highlighted: true
