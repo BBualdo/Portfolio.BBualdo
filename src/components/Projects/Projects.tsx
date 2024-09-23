@@ -81,7 +81,7 @@ export default function Projects() {
               {project.technologies.map((t, index) => (
                 <li
                   key={index}
-                  className="my-2 mr-2 inline-block rounded-xl border-2 border-viceCyan bg-viceCyan/10 px-4 py-2 font-bold text-white shadow-[0_4px_0] shadow-viceCyan"
+                  className="my-2 mr-2 text-xs md:text-base inline-block rounded-xl border-2 border-viceCyan bg-viceCyan/10 px-4 py-2 font-bold text-white shadow-[0_4px_0] shadow-viceCyan"
                 >
                   {t}
                 </li>
