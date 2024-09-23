@@ -61,8 +61,8 @@ export default function Projects() {
           </div>
         ) : null}
         {project.videoUrl ? (
-          <div className="flex-1">
-            <iframe className="w-full lg:h-full h-[300px] xs:max-lg:rounded-t-lg lg:rounded-l-lg xs:max-lg:border-b-2 lg:border-r-2 border-white" src={project.videoUrl}
+          <div className="flex-1 xs:max-lg:border-b-2 lg:border-r-2 border-white flex justify-center items-center">
+            <iframe className="w-full max-h-[440px] lg:h-full h-[300px] xs:max-lg:rounded-t-lg lg:rounded-l-lg" src={project.videoUrl}
                     title={`${project.name} demo`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
