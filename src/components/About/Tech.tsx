@@ -34,7 +34,7 @@ const Tech = () => {
           </p>
         </div>
         <h3 className="mt-2">Tech</h3>
-        <ul className="xs:max-lg:grid grid-cols-2">
+        <ul className="md:max-lg:grid xs:max-md:flex flex-col gap-2 grid-cols-2">
           {skills.sort((a, b) => a.priority - b.priority).map((skill, index) => (
             <motion.li
               variants={fadeIn("left", (index + 1) / 4, 1, 1)}
@@ -46,10 +46,10 @@ const Tech = () => {
               style={{ boxShadow: `0 4px 0 ${skill.color}` }}
             >
               <div className="flex items-center gap-2">
-                <div className="relative h-[30px] w-[30px] xl:h-[50px] xl:w-[50px]">
+                <div className="relative flex-shrink-0 h-[30px] w-[30px] xl:h-[50px] xl:w-[50px]">
                   <Image alt={skill.name} src={skill.imagePath} fill />
                 </div>
-                <p className="text-xs lg:text-sm xl:text-base">{skill.name}</p>
+                <p className="text-sm xl:text-base">{skill.name}</p>
               </div>
             </motion.li>
           ))}

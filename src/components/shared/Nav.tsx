@@ -10,7 +10,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Nav() {
   return (
-    <nav className="fixed bottom-16 z-50 w-full opacity-50 transition-all duration-500 hover:opacity-100">
+    <nav className="fixed bottom-10 md:bottom-16 z-50 w-full opacity-50 transition-all duration-500 hover:opacity-100">
       <div className="gradient-bw mx-auto h-[70px] max-w-[340px] rounded-full p-1 lg:max-w-[440px]">
         <div className="mx-auto flex h-full w-full items-center justify-center gap-8 rounded-full bg-black p-4 text-2xl text-white/50 lg:gap-10 lg:text-3xl">
           <Link
