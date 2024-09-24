@@ -2,13 +2,13 @@
 
 import { projects, ProjectType } from "@/constants/projects";
 import { revalia } from "@/utils/fonts";
-import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import CTAAnchor from "../shared/CTAAnchor";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
 import ProjectsFilter from "@/components/Projects/ProjectsFilter";
 import { useState } from "react";
+import NoProjectVideo from "@/components/Projects/NoProjectVideo";
 
 export default function Projects() {
   const [currentFilters, setCurrentFilters] = useState<string[]>(["highlighted"]);
@@ -43,23 +43,6 @@ export default function Projects() {
         key={project.id}
         className="flex rounded-xl border-4 flex-col lg:flex-row"
       >
-        {project.image ? (
-          <div
-            className="relative flex-1 xs:max-lg:hidden"
-          >
-            <Image
-              src={
-                project.type == "console"
-                  ? project.image.console
-                  : project.image.desktop
-              }
-              alt=""
-              fill
-              sizes={"100%"}
-              className="object-contain"
-            />
-          </div>
-        ) : null}
         {project.videoUrl ? (
           <div className="flex-1 xs:max-lg:border-b-2 lg:border-r-2 border-white flex justify-center items-center">
             <iframe className="w-full max-h-[440px] lg:h-full h-[300px] xs:max-lg:rounded-t-lg lg:rounded-l-lg" src={project.videoUrl}
@@ -67,7 +50,7 @@ export default function Projects() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
-        ) : null}
+        ) : <NoProjectVideo techLogoPath={`/icons/${project.technologies[0]}.svg`} />}
         <div
           className="flex flex-1 flex-col gap-10 px-6 py-6 xl:px-10"
         >
