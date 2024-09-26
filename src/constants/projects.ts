@@ -95,11 +95,7 @@ export const projects: ProjectType[] = [
       "UI/UX Design",
     ],
     finishDate: "30-05-2024",
-    image: {
-      console: "",
-      desktop: "/screenshots/quiz-game/desktop.png",
-      mobile: "",
-    },
+    videoUrl: "https://www.youtube.com/embed/wZJBZXP6fHo?si=SDJix0dtBZrYLosF",
     linkToRepo: "https://github.com/BBualdo/QuizGame",
     slug: "/quiz-game",
     highlighted: true
