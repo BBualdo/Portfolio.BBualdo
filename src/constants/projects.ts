@@ -142,7 +142,6 @@ export const projects: ProjectType[] = [
     },
     linkToRepo: "https://github.com/BBualdo/ShiftsLogger",
     slug: "/shifts-logger",
-    highlighted: true
   },
   {
     id: 6,
@@ -285,8 +284,10 @@ export const projects: ProjectType[] = [
       "Simple Product Management System app with Role-Based Authentication and Authorization, where user can browse, create, update and delete products and admin can do the same with users.",
     technologies: ["Angular", "TypeScript", "C#", "PostgreSQL", "Entity Framework Core", "FluentAPI", "ASP.NET", "Web API", "ASP.NET Identity", "Angular Material", "TailwindCSS", "PapercutSMTP"],
     finishDate: "10-06-2024",
+    videoUrl: "https://www.youtube.com/embed/sl1v5jdJr1k?si=j-KBY4quFRipOQDT",
     linkToRepo: "https://github.com/BBualdo/PMS",
     slug: "/pms",
+    highlighted: true
   },
   {
     id: 20,
