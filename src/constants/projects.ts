@@ -342,6 +342,7 @@ export const projects: ProjectType[] = [
     technologies: ["Azure Functions", "C#", "CosmosDB", "Azure Storage Emulator", "PapercutSMTP"],
     finishDate: "03-08-2024",
     linkToRepo: "https://github.com/BBualdo/AzureFunctions.BBualdo",
+    videoUrl: "https://www.youtube.com/embed/6tSqW4A6TSU?si=Ea6E3C56FaoaBapX",
     slug: "/azure-functions",
   },
 ];
