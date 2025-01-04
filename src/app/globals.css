@@ -18,6 +18,10 @@
   background: rgba(0, 174, 255, 1);
 }
 
+html, body {
+  min-height: 100vh;
+}
+
 body {
   background-color: black;
   color: white;
