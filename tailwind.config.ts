@@ -19,7 +19,8 @@ const config: Config = {
       colors: {
         vicePink: "rgb(255, 0, 157)",
         viceCyan: "rgb(0, 174, 255)",
-        matrixGreen: "#22b455"
+        matrixGreen: "#22b455",
+        lightMatrixGreen: "#41ff7e"
       },
     },
   },
