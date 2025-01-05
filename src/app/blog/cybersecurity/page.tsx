@@ -3,8 +3,8 @@ import Article from "@/components/blogs/Cybersecurity/Article";
 
 export default function Cybersecurity() {
   return (
-    <main className="flex min-h-screen px-20 py-32">
-      <div className="flex flex-col gap-6">
+    <main className="min-h-screen px-2 md:px-20 py-32">
+      <div className="flex flex-col gap-6 place-items-center xl:grid grid-cols-2">
         {cybersecurityArticles.map(article => (
           <Article key={article.day} article={article} />
         ))}

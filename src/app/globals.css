@@ -65,3 +65,9 @@ html, body {
         @apply text-shadow-viceCyan uppercase;
     }
 }
+
+@layer utilities {
+    .user-select-none {
+        user-select: none;
+    }
+}

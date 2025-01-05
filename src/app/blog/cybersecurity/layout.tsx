@@ -19,14 +19,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     </head>
     <body className={cutiveMono.className}>
     <MatrixBackground />
-    <nav className="p-6 fixed flex items-center w-full border-b-2 border-matrixGreen/20">
-      <div className="inline-block absolute">
+    <nav className="p-6 fixed flex xs:max-md:flex-col-reverse items-center w-full border-b-2 border-matrixGreen/20 z-50 bg-black">
+      <div className="inline-block md:absolute">
         <a href=".." className="flex items-center gap-2 hover:text-matrixGreen hover:font-bold">
           <BiLeftArrow />
           <span className="text-xl">Back to Portfolio</span>
         </a>
       </div>
-      <h1 className="text-matrixGreen text-4xl w-full text-center">Cybersecurity</h1>
+      <h1 className="text-matrixGreen text-4xl w-full cursor-default user-select-none text-center">Cybersecurity</h1>
     </nav>
     {children}
     </body>
