@@ -1,0 +1,22 @@
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 174, 255, 0.7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 174, 255, 1);
+}
+
+body {
+  background-color: black;
+  color: white;
+  cursor: url("/default.png"), auto;
+}
+
+.active {
+  color: white;
+  transform: scale(1.25);
+}
+
+.pointer {
+  cursor: url("/pointer.png"), pointer;
+}

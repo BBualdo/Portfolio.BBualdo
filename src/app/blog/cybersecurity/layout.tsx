@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-
-import { lato } from "@/utils/fonts";
+import { cutiveMono } from "@/utils/fonts";
+import '../../globals.css'
+import './cybersecurity.css'
+import MatrixBackground from "@/components/backgrounds/MatrixBackground";
+import { BiArrowBack, BiLeftArrow } from "react-icons/bi";
 
 export const metadata: Metadata = {
   title: "Blog | Cybersecurity",
@@ -14,7 +17,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <head>
       <link rel="icon" href="/favicon.png" />
     </head>
-    <body className={lato.className}>{children}</body>
+    <body className={cutiveMono.className}>
+    <MatrixBackground />
+    <nav className="p-6 fixed">
+      <div className="inline-block">
+        <a href=".." className="flex items-center gap-2 hover:text-matrixGreen hover:font-bold">
+          <BiLeftArrow />
+          <span className="text-xl">Back to Portfolio</span>
+        </a>
+      </div>
+    </nav>
+    {children}
+    </body>
     </html>
   );
 }

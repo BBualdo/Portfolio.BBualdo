@@ -36,16 +36,17 @@ const Info = () => {
           </h4>
         </div>
       </div>
-      {/*<div className="mt-8 w-full flex items-center justify-center">*/}
-      {/*  <CTAAnchor*/}
-      {/*    id="linkToDetailedBio"*/}
-      {/*    ariaLabel="Link To Details About Me"*/}
-      {/*    href="/my-story"*/}
-      {/*    target="_self"*/}
-      {/*  >*/}
-      {/*    Read details about me*/}
-      {/*  </CTAAnchor>*/}
-      {/*</div>*/}
+      <div className="mt-8 w-full flex items-center justify-center">
+        <CTAAnchor
+          id="linkToDetailedBio"
+          ariaLabel="Link To Details About Me"
+          href="/my-story"
+          target="_self"
+          disabled
+        >
+          Read more (soon)
+        </CTAAnchor>
+      </div>
     </motion.div>
   );
 };

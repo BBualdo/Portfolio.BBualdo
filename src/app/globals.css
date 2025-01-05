@@ -3,88 +3,65 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: black;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(0, 174, 255, 0.7);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 174, 255, 1);
+    background: black;
 }
 
 html, body {
-  min-height: 100vh;
-}
-
-body {
-  background-color: black;
-  color: white;
-  cursor: url("/default.png"), auto;
-}
-
-.active {
-  color: white;
-  transform: scale(1.25);
-}
-
-.text-shadow-vicePink {
-  text-shadow: 2px 2px 0 rgba(255, 0, 157, 0.7);
-}
-
-.text-shadow-viceCyan {
-  text-shadow: 2px 2px 0 rgba(0, 174, 255, 0.7);
-}
-
-.pointer {
-  cursor: url("/pointer.png"), pointer;
+    min-height: 100vh;
 }
 
 @layer base {
-  section {
-    @apply min-h-screen px-4 xl:px-40;
-  }
+    section {
+        @apply min-h-screen px-4 xl:px-40;
+    }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  p {
-    @apply text-balance;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        @apply text-balance;
+    }
 
-  h1 {
-    @apply text-4xl font-bold xs:max-lg:text-center lg:text-7xl;
-  }
+    h1 {
+        @apply text-4xl font-bold xs:max-lg:text-center lg:text-7xl;
+    }
 
-  h2 {
-    @apply text-2xl xs:max-lg:text-center lg:text-4xl;
-  }
+    h2 {
+        @apply text-2xl xs:max-lg:text-center lg:text-4xl;
+    }
 
-  h3 {
-    @apply text-xl xs:max-lg:text-center lg:text-2xl;
-  }
+    h3 {
+        @apply text-xl xs:max-lg:text-center lg:text-2xl;
+    }
 
-  h4 {
-    @apply text-lg xs:max-lg:text-center lg:text-xl;
-  }
+    h4 {
+        @apply text-lg xs:max-lg:text-center lg:text-xl;
+    }
+}
+
+.text-shadow-vicePink {
+    text-shadow: 2px 2px 0 rgba(255, 0, 157, 0.7);
+}
+
+.text-shadow-viceCyan {
+    text-shadow: 2px 2px 0 rgba(0, 174, 255, 0.7);
 }
 
 @layer components {
-  .gradient-bw {
-    @apply bg-gradient-to-b from-white to-black to-100%;
-  }
+    .gradient-bw {
+        @apply bg-gradient-to-b from-white to-black to-100%;
+    }
 
-  .gradient-pinkcyan {
-    @apply bg-gradient-to-tl from-vicePink to-viceCyan to-70%;
-  }
+    .gradient-pinkcyan {
+        @apply bg-gradient-to-tl from-vicePink to-viceCyan to-70%;
+    }
 
-  .title {
-    @apply text-shadow-viceCyan uppercase;
-  }
+    .title {
+        @apply text-shadow-viceCyan uppercase;
+    }
 }
