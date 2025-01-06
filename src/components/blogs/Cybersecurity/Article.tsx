@@ -6,7 +6,7 @@ const Article = ( {article}:{article: ArticleType} ) => {
   const { day, title, description, imageUrl, imageAlt, date, slug } = article;
 
   return (
-    <a href={`cybersecurity/${slug}`} className="flex flex-col hover:border-matrixGreen xs:h-[600px] md:h-[500px] md:w-[600px] border-4 rounded-tr-3xl overflow-hidden rounded-bl-3xl border-matrixGreen/10">
+    <a href={`cybersecurity/${slug}`} className="flex flex-col hover:border-matrixGreen xs:h-[600px] md:h-[500px] border-4 rounded-tr-3xl overflow-hidden rounded-bl-3xl border-matrixGreen/10">
       <div className="relative flex-1">
         <Image alt={imageAlt} src={imageUrl} fill objectFit="cover" className="filter-matrix" />
       </div>

@@ -27,5 +27,14 @@ export const cybersecurityArticles: ArticleType[] = [
     imageAlt: "",
     date: "05-01-2024",
     slug: "network-fundamentals-1"
+  },
+  {
+    day: 3,
+    title: "Network Fundamentals - Part II",
+    description: "Learned about OSI Model role in networks and it's layers, about packets, frames and learned extending network methods.",
+    imageUrl: "/cybersecurity-articles-images/3.avif",
+    imageAlt: "",
+    date: "06-01-2024",
+    slug: "network-fundamentals-1"
   }
 ];
