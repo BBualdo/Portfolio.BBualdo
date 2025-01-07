@@ -31,7 +31,7 @@ export const cybersecurityArticles: ArticleType[] = [
   {
     day: 3,
     title: "Network Fundamentals - Part II",
-    description: "Learned about OSI Model role in networks and it's layers, about packets, frames and learned extending network methods.",
+    description: "To standardize the way devices exchange data in a network, the OSI (Open Systems Interconnection) Model was created. It defines how devices send, receive, and interpret data.",
     imageUrl: "/cybersecurity-articles-images/3.avif",
     imageAlt: "",
     date: "06-01-2024",
