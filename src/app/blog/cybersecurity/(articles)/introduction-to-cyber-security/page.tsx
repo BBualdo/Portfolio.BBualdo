@@ -36,7 +36,7 @@ export default function Page() {
           </div>
         </div>
         <div>
-          <h3 className="text-matrixGreen font-bold"><FaKey className="inline-block" /> Key words</h3>
+          <h3 className="text-lightMatrixGreen font-bold"><FaKey className="inline-block" /> Key words</h3>
           <ul className="flex flex-col gap-6 my-6">
             <li><span className="font-bold text-lightMatrixGreen">SOC (Security Operations Center)</span> - a team of cyber security professionals that monitors the network to detect any malicious events like vulnerabilities, policy violations, unauthorized activity or network intrusions.</li>
             <li><span className="font-bold text-lightMatrixGreen">Threat Intelligence</span> - just organised and acknowledged treats that can specific company can encounter.</li>

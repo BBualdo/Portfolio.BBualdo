@@ -13,7 +13,7 @@ export const cybersecurityArticles: ArticleType[] = [
   {
     day: 1,
     title: "Introduction to Cyber Security",
-    description: "Grasped and refreshed knowledge about IP/TCP, DNS and protocols and enrolled to TryHackMe platform, where I could learn about cyber security concepts basics and read about various career directions.",
+    description: "You can't talk about learning cybersecurity without first understanding certain key concepts and how networks work. Even the best cop can't catch a criminal unless they know the area of operation at least as well as the criminal does. But what exactly is cybersecurity?",
     imageUrl: "/cybersecurity-articles-images/1.avif",
     imageAlt: "",
     date: "04-01-2024",
@@ -22,7 +22,7 @@ export const cybersecurityArticles: ArticleType[] = [
   {
     day: 2,
     title: "Network Fundamentals - Part I",
-    description: "Dived deeper into networking, understood how devices communicate with each other and learnt about types of networks and their pros/cons.",
+    description: "Every day, we deal with networks — whether it's in the context of public transportation, electricity, human interactions, or mail. \"Everything is connected\", as my favorite artists Opał and Gibbs say in their album's tagline. 😁",
     imageUrl: "/cybersecurity-articles-images/2.avif",
     imageAlt: "",
     date: "05-01-2024",
@@ -35,6 +35,6 @@ export const cybersecurityArticles: ArticleType[] = [
     imageUrl: "/cybersecurity-articles-images/3.avif",
     imageAlt: "",
     date: "06-01-2024",
-    slug: "network-fundamentals-1"
+    slug: "network-fundamentals-2"
   }
 ];
