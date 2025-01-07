@@ -19,14 +19,6 @@ html, body {
         @apply min-h-screen px-4 xl:px-40;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    p {
-        @apply text-balance;
-    }
-
     h1 {
         @apply text-4xl font-bold xs:max-lg:text-center lg:text-7xl;
     }

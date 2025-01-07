@@ -20,7 +20,8 @@ const config: Config = {
         vicePink: "rgb(255, 0, 157)",
         viceCyan: "rgb(0, 174, 255)",
         matrixGreen: "#22b455",
-        lightMatrixGreen: "#41ff7e"
+        lightMatrixGreen: "#41ff7e",
+        darkMatrixGreen: "#00521b"
       },
     },
   },

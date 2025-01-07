@@ -14,3 +14,7 @@ body {
 .filter-matrix {
     filter: brightness(50%) invert(2%) sepia(99%) saturate(1484%) hue-rotate(121deg) brightness(94%) contrast(105%);
 }
+
+.cyber-btn {
+    @apply bg-darkMatrixGreen hover:bg-matrixGreen p-2 transition-all duration-200
+}
