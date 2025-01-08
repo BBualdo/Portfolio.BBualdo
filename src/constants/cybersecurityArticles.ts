@@ -36,5 +36,14 @@ export const cybersecurityArticles: ArticleType[] = [
     imageAlt: "",
     date: "06-01-2024",
     slug: "network-fundamentals-2"
+  },
+  {
+    day: 4,
+    title: "How the Web Works - Part I",
+    description: "When we want to connect to a website, we simply type its name into the browser, like google.com. Easy, right? But what if we had to type 8.8.8.8 instead? That’s still manageable, but now imagine replacing all the websites we know with their IP addresses. Not so simple anymore, is it? This is where DNS (Domain Name System) comes to the rescue. Just like a postal address points to a specific house, a domain name points to a specific IP address of the website we want to connect to.",
+    imageUrl: "/cybersecurity-articles-images/4.avif",
+    imageAlt: "",
+    date: "07-01-2024",
+    slug: "how-the-web-works-1"
   }
 ];
