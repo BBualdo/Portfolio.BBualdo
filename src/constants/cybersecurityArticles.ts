@@ -45,5 +45,14 @@ export const cybersecurityArticles: ArticleType[] = [
     imageAlt: "",
     date: "07-01-2024",
     slug: "how-the-web-works-1"
+  },
+  {
+    day: 5,
+    title: "How the Web Works - Part II",
+    description: "HTTP (HyperText Transfer Protocol) is the protocol that enables communication between a user’s browser and a server. Think of it as a waiter in a restaurant: the user places an order (request), and the server responds by delivering the dish (response). HTTPS is the secure version of this protocol, using encryption (SSL/TLS) to protect data from eavesdropping.",
+    imageUrl: "/cybersecurity-articles-images/5.avif",
+    imageAlt: "",
+    date: "08-01-2024",
+    slug: "how-the-web-works-2"
   }
 ];

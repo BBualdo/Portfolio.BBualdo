@@ -8,7 +8,7 @@ const Article = ( {article}:{article: ArticleType} ) => {
   return (
     <a href={`cybersecurity/${slug}`} className="flex flex-col hover:border-matrixGreen xs:h-[600px] md:h-[500px] border-4 rounded-tr-3xl overflow-hidden rounded-bl-3xl border-matrixGreen/10">
       <div className="relative flex-1">
-        <Image alt={imageAlt} src={imageUrl} fill objectFit="cover" className="filter-matrix" />
+        <Image alt={imageAlt} src={imageUrl} fill className="object-cover filter-matrix" />
       </div>
       <div className="flex flex-col gap-4 p-4 flex-1">
         <p>{day ? `Day ${day}` : null}</p>
