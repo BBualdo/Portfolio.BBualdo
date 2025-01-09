@@ -21,7 +21,7 @@ export default function Page() {
         <div className="flex flex-col gap-10 py-6 lg:py-16">
           <h2 className="font-bold text-lightMatrixGreen">Day 6</h2>
           <p>
-            The moment has finally arrived. During my 1.5-year journey with programming, I often encountered terms like Apache, Ubuntu, and the general statement that knowledge of Linux is crucial for software developers (especially in backend development). Yet, I never felt the need to delve into the intricacies of this system—until now. It's time to fulfill my destiny!
+            The moment has finally arrived. During my 1.5-year journey with programming, I often encountered terms like Apache, Ubuntu, and the general statement that knowledge of Linux is crucial for software developers (especially in backend development). Yet, I never felt the need to delve into the intricacies of this system—until now. It&apos;s time to fulfill my destiny!
           </p>
 
           <h3 className="font-bold text-lightMatrixGreen">Linux Fundamentals - Part I</h3>
@@ -46,15 +46,15 @@ export default function Page() {
             <li><code>cd</code> — Allows navigation between directories.</li>
             <li><code>cat</code> — Reads file contents.</li>
             <li><code>pwd</code> — Displays the full path of the current directory.</li>
-            <li><code>find</code> — Finds a file you're looking for.</li>
+            <li><code>find</code> — Finds a file you&apos;re looking for.</li>
             <li><code>grep</code> — Searches for specific values in a file.</li>
           </ul>
 
           <h4 className="font-bold text-lightMatrixGreen">Shell Operators:</h4>
           <ul className="list-disc ml-6">
-            <li><code>&</code> — Tells the terminal, "Hey, this task might take some time. Run it in the background while I handle other tasks."</li>
+            <li><code>&</code> — Tells the terminal, &quot;Hey, this task might take some time. Run it in the background while I handle other tasks.&quot;</li>
             <li><code>&&</code> — Executes multiple commands sequentially, e.g., <code>command1 && command2</code>. Note that <code>command2</code> will not run if <code>command1</code> fails.</li>
-            <li><code>&gt;</code> — An output redirector. Sends command results elsewhere, e.g., <code>echo hey &gt; welcome</code> creates a file "welcome" with the content "hey" (overwrites if the file exists).</li>
+            <li><code>&gt;</code> — An output redirector. Sends command results elsewhere, e.g., <code>echo hey &gt; welcome</code> creates a file &quot;welcome&quot; with the content &quot;hey&quot; (overwrites if the file exists).</li>
             <li><code>&gt;&gt;</code> — Similar to <code>&gt;</code>, but appends the result to the file instead of overwriting it.</li>
           </ul>
 
@@ -73,7 +73,7 @@ export default function Page() {
           <h3 className="font-bold text-lightMatrixGreen">Flags and Switches</h3>
           <p>
             Every command can be modified with arguments to change its behavior. For example,
-            the <code>ls</code> command (list) doesn't show hidden files or folders by default. Adding
+            the <code>ls</code> command (list) doesn&apos;t show hidden files or folders by default. Adding
             the <code>-a</code> flag (e.g., <code>ls -a</code>) reveals them, marked with a dot at the beginning
             (e.g., <code>.folder</code>). You can view all flags for a command using the <code>man</code> (manual)
             command: <code>man [command]</code>.
