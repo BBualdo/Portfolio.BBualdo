@@ -1,7 +1,6 @@
 import { BiLeftArrow } from "react-icons/bi";
 import Image from "next/image";
 import { cybersecurityArticles } from "@/constants/cybersecurityArticles";
-import { FaKey } from "react-icons/fa";
 
 export default function Page() {
   const currentArticle = cybersecurityArticles.find(art => art.day === 5)!;

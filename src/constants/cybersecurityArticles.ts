@@ -54,5 +54,14 @@ export const cybersecurityArticles: ArticleType[] = [
     imageAlt: "",
     date: "08-01-2024",
     slug: "how-the-web-works-2"
+  },
+  {
+    day: 6,
+    title: "Linux Fundamentals - Part I",
+    description: "HTTP (HyperText Transfer Protocol) is the protocol that enables communication between a user’s browser and a server. Think of it as a waiter in a restaurant: the user places an order (request), and the server responds by delivering the dish (response). HTTPS is the secure version of this protocol, using encryption (SSL/TLS) to protect data from eavesdropping.",
+    imageUrl: "/cybersecurity-articles-images/6.avif",
+    imageAlt: "",
+    date: "09-01-2024",
+    slug: "linux-fundamentals-1"
   }
 ];
