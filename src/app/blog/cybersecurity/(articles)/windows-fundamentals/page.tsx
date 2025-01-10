@@ -231,6 +231,106 @@ export default function Page() {
                                                       href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users">Windows
             Registry - Advanced Users</a>
           </p>
+          <h2 className="font-bold text-lightMatrixGreen">Windows Fundamentals - Part III</h2>
+
+          <h3 className="font-bold text-lightMatrixGreen">Microsoft Update</h3>
+          <p>
+            Microsoft Update is an essential service that ensures your system remains secure and up-to-date. It provides
+            patches for security vulnerabilities, feature updates, and driver installations. There are two main types of
+            updates:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>
+              <strong>Security Updates:</strong> These address critical vulnerabilities that could be exploited by
+              attackers.
+            </li>
+            <li>
+              <strong>Feature Updates:</strong> These introduce new functionalities or improvements to the operating
+              system.
+            </li>
+          </ul>
+          <p>
+            Regular updates are vital for maintaining system security. However, some users may delay updates, risking
+            exposure to known vulnerabilities. For businesses, tools like WSUS (Windows Server Update Services) help
+            manage updates across multiple devices efficiently. <br />
+            <a className="link" href="https://learn.microsoft.com/en-us/windows/deployment/update/windows-update">Read
+              more about Windows Update</a>
+          </p>
+
+          <h3 className="font-bold text-lightMatrixGreen">Microsoft Defender</h3>
+          <p>
+            Microsoft Defender is Windows&apos; built-in antivirus solution, offering real-time protection against malware,
+            viruses, and other threats. Key features include:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>Automatic scanning of files and downloads.</li>
+            <li>Cloud-based threat analysis for faster detection.</li>
+            <li>Integration with Microsoft Security Intelligence for up-to-date protection.</li>
+          </ul>
+          <p>
+            Defender also includes tools like <strong>Controlled Folder Access</strong>, which protects sensitive
+            folders from unauthorized changes, and a <strong>Firewall</strong> to monitor network activity. <br />
+            <a className="link"
+               href="https://learn.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10">Read
+              more about Microsoft Defender</a>
+          </p>
+
+          <h3 className="font-bold text-lightMatrixGreen">Windows Firewall</h3>
+          <p>
+            The Windows Firewall acts as a barrier between your computer and potential threats from the internet or
+            local networks. It monitors and controls incoming and outgoing network traffic based on predefined security
+            rules. Key capabilities include:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>Blocking unauthorized access to your system.</li>
+            <li>Allowing or denying specific applications or ports.</li>
+            <li>Customizable rules for advanced users.</li>
+          </ul>
+          <p>
+            The firewall is essential for protecting devices in both home and corporate environments. Advanced features
+            like <strong>Windows Defender Firewall with Advanced Security</strong> enable granular control over network
+            traffic. <br />
+            <a className="link"
+               href="https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security">Read
+              more about Windows Firewall</a>
+          </p>
+
+          <h3 className="font-bold text-lightMatrixGreen">BitLocker</h3>
+          <p>
+            BitLocker is a full-disk encryption feature in Windows that protects data from unauthorized access. It
+            encrypts the entire drive, ensuring that even if a device is lost or stolen, the data remains secure. Key
+            features include:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>Seamless integration with TPM (Trusted Platform Module) for secure key storage.</li>
+            <li>Support for encrypting removable drives via BitLocker To Go.</li>
+            <li>Recovery keys for emergency access.</li>
+          </ul>
+          <p>
+            BitLocker is particularly useful in enterprise environments where data protection is critical. However,
+            users must safeguard their recovery keys to avoid data loss. <br />
+            <a className="link"
+               href="https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/">Read
+              more about BitLocker</a>
+          </p>
+
+          <h3 className="font-bold text-lightMatrixGreen">Volume Shadow Copy Service (VSS)</h3>
+          <p>
+            The Volume Shadow Copy Service (VSS) enables the creation of backup snapshots of files, even when they are
+            in use. It’s commonly used for:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>Creating restore points for system recovery.</li>
+            <li>Backing up open or locked files.</li>
+          </ul>
+          <p>
+            However, attackers, especially ransomware creators, have exploited VSS. For instance, ransomware may delete
+            shadow copies to prevent victims from recovering their files without paying a ransom. Tools
+            like <code>vssadmin</code> can be abused to delete these backups. <br />
+            <a className="link"
+               href="https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service">Read
+              more about VSS</a>
+          </p>
         </div>
       </main>
     </>

@@ -67,7 +67,7 @@ export const cybersecurityArticles: ArticleType[] = [
   {
     day: 7,
     title: "Windows Fundamentals",
-    description: "My 1.5-year journey into programming has often brought me across terms like Apache, Ubuntu, and the general idea that Linux is essential for software developers, especially in backend development. However, I never felt the need to explore it deeply—until now. It's time to fulfill my destiny!",
+    description: "Raise your hand if you&apos;ve never used Windows... Alright, probably no one! Windows 95, 98, XP (😍), Vista (🤢), 7, 8, 10, 11... Everyone has used at least one version. Some still cling to the good old XP, and honestly, who can blame them? A reliable classic. Back in the day, all that mattered was running Counter-Strike 1.6 and a Mozilla icon copied from a USB stick. Anyway, now it&apos;s time to dive into the mysteries of this system—well, the newer versions, because they have more options 😁.",
     imageUrl: "/cybersecurity-articles-images/7.avif",
     imageAlt: "",
     date: "10-01-2024",
