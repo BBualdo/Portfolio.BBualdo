@@ -13,7 +13,7 @@ const Article = ( {article}:{article: ArticleType} ) => {
       <div className="flex flex-col gap-4 p-4 flex-1">
         <p>{day ? `Day ${day}` : null}</p>
         <h3 className="text-left">{title}</h3>
-        <p>{truncateString(description, 250)}</p>
+        <p>{truncateString(description, 150)}</p>
         <p className="mt-auto">{date}</p>
       </div>
     </a>

@@ -23,7 +23,7 @@ export default function Page() {
           <p>
             My 1.5-year journey into programming has often brought me across terms like Apache, Ubuntu, and the general
             idea that Linux is essential for software developers, especially in backend development. However, I never
-            felt the need to explore it deeply—until now. It&apos;s time to fulfill my destiny!
+            felt the need to explore it deeply — until now. It&apos;s time to fulfill my destiny!
           </p>
           <h2 className="font-bold text-lightMatrixGreen">Linux Fundamentals - Part I</h2>
           <p>

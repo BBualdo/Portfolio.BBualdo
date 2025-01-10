@@ -63,5 +63,14 @@ export const cybersecurityArticles: ArticleType[] = [
     imageAlt: "",
     date: "09-01-2024",
     slug: "linux-fundamentals"
+  },
+  {
+    day: 7,
+    title: "Windows Fundamentals",
+    description: "My 1.5-year journey into programming has often brought me across terms like Apache, Ubuntu, and the general idea that Linux is essential for software developers, especially in backend development. However, I never felt the need to explore it deeply—until now. It's time to fulfill my destiny!",
+    imageUrl: "/cybersecurity-articles-images/7.avif",
+    imageAlt: "",
+    date: "10-01-2024",
+    slug: "windows-fundamentals"
   }
 ];

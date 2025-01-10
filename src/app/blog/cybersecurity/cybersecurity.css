@@ -18,3 +18,7 @@ body {
 .cyber-btn {
     @apply bg-darkMatrixGreen hover:bg-matrixGreen p-2 transition-all duration-200
 }
+
+.link {
+    @apply text-matrixGreen underline hover:text-lightMatrixGreen
+}
