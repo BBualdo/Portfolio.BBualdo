@@ -73,7 +73,9 @@ export default function Page() {
             NTFS introduces a feature called Alternate Data Streams (ADS), which allows storing additional data in files
             without changing their traditional size. ADS can be used for both good and malicious purposes (e.g., by
             malware). <br />
-            <a className="link" href="https://www.malwarebytes.com/blog/101/2015/07/introduction-to-alternate-data-streams">Read more about ADS</a>
+            <a className="link"
+               href="https://www.malwarebytes.com/blog/101/2015/07/introduction-to-alternate-data-streams">Read more
+              about ADS</a>
           </p>
 
           <h3 className="font-bold text-lightMatrixGreen">Environment Variables and the System32 Folder</h3>
@@ -89,7 +91,8 @@ export default function Page() {
             The System32 folder is the heart of Windows, containing critical system files like drivers, DLL libraries,
             and command-line tools. Deleting this folder can render the system inoperable. <br />
             <a className="link"
-               href="https://www.howtogeek.com/346997/what-is-the-system32-directory-and-why-you-shouldnt-delete-it/">Read more
+               href="https://www.howtogeek.com/346997/what-is-the-system32-directory-and-why-you-shouldnt-delete-it/">Read
+              more
               about System32</a>
           </p>
           <h3 className="font-bold text-lightMatrixGreen">User and Group Management</h3>
@@ -109,14 +112,124 @@ export default function Page() {
           <h3 className="font-bold text-lightMatrixGreen">User Account Control (UAC)</h3>
           <p>
             UAC is a security mechanism that limits application actions on the system. It requires user confirmation for
-            operations needing administrator privileges, protecting the system from accidental or malicious changes. <br />
-            <a className="link" href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works">Read more about UAC</a>
+            operations needing administrator privileges, protecting the system from accidental or malicious
+            changes. <br />
+            <a className="link"
+               href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works">Read
+              more about UAC</a>
           </p>
           <h3 className="font-bold text-lightMatrixGreen">Task Manager</h3>
           <p>
             Task Manager is a powerful tool for managing processes, applications, and system resources. It allows
             monitoring CPU, RAM, disk, and network usage and terminating unresponsive applications. <br />
-            <a className="link" href="https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/">Read more about Task Manager</a>
+            <a className="link" href="https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/">Read
+              more about Task Manager</a>
+          </p>
+          <h2 className="font-bold text-lightMatrixGreen">Windows Fundamentals - Part II</h2>
+
+          <h3 className="font-bold text-lightMatrixGreen">msconfig - System Configuration Tool</h3>
+          <p>
+            `msconfig` is a tool available in Windows that allows you to quickly manage system settings and boot
+            configuration. Here are the details of the different tabs in the msconfig window:
+          </p>
+          <h4 className="font-bold text-lightMatrixGreen">General</h4>
+          <p>
+            This tab allows you to select the startup mode for the system. You can choose one of three modes:
+          </p>
+          <ul className="list-disc list-inside ml-6">
+            <li><strong>Normal startup:</strong> Boots the system with default settings.</li>
+            <li><strong>Diagnostic startup:</strong> Boots the system with a minimal set of drivers and programs,
+              useful for troubleshooting.
+            </li>
+            <li><strong>Selective startup:</strong> Allows you to choose which elements of the system should be loaded
+              during startup, such as services and startup programs.
+            </li>
+          </ul>
+          <h4 className="font-bold text-lightMatrixGreen">Boot</h4>
+          <p>
+            In this tab, you can manage boot options, including:
+          </p>
+          <ul className="list-disc list-inside ml-6">
+            <li><strong>Timeout:</strong> Specifies the time the system waits before selecting an operating system in
+              case of dual boot.
+            </li>
+            <li><strong>Safe boot:</strong> Allows the system to boot in safe mode, useful for troubleshooting issues.
+            </li>
+          </ul>
+          <h4 className="font-bold text-lightMatrixGreen">Services</h4>
+          <p>
+            This tab displays a list of system services that can be enabled or disabled. Enabling or disabling services
+            can help improve system performance, but caution is needed to avoid disabling critical services.
+          </p>
+          <h4 className="font-bold text-lightMatrixGreen">Startup</h4>
+          <p>
+            In this tab, you can manage programs that run automatically at startup. You can enable or disable these
+            applications to optimize boot time.
+          </p>
+          <h4 className="font-bold text-lightMatrixGreen">Tools</h4>
+          <p>
+            This tab contains shortcuts to various system tools, such as:
+          </p>
+          <ul className="list-disc list-inside ml-6">
+            <li><strong>System Information</strong> (`msinfo32`)</li>
+            <li><strong>Event Viewer</strong></li>
+            <li><strong>Resource Monitor</strong></li>
+            <li><strong>Command Prompt</strong></li>
+            <li><strong>Registry Editor</strong></li>
+          </ul>
+          <h3 className="font-bold text-lightMatrixGreen">System Tools</h3>
+          <h4 className="font-bold text-lightMatrixGreen">Computer Management</h4>
+          <p>
+            Computer Management is a tool that allows you to manage various aspects of your computer. It includes:
+          </p>
+          <ul className="list-disc list-inside ml-6">
+            <li><strong>Disk Management:</strong> Allows you to manage hard drives, partitions, and volumes.</li>
+            <li><strong>Device Manager:</strong> Allows you to manage installed devices, such as drivers and hardware.
+            </li>
+            <li><strong>Event Viewer:</strong> Allows you to view system event logs, useful for troubleshooting
+              issues.
+            </li>
+          </ul>
+          <h4 className="font-bold text-lightMatrixGreen">System Information</h4>
+          <p>
+            The System Information tool (`msinfo32`) provides detailed information about the system, including hardware,
+            software, and drivers. It can be useful for diagnosing system issues.
+          </p>
+          <p>
+            Link to detailed hardware resources information: <a className="link"
+                                                                href="https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/hardware-resources">Hardware
+            Resources</a>
+          </p>
+          <h4 className="font-bold text-lightMatrixGreen">Resource Monitor</h4>
+          <p>
+            Resource Monitor allows you to monitor system resource usage, such as CPU, memory, disk, and network usage.
+            It helps identify which applications are consuming the most resources.
+          </p>
+          <h4 className="font-bold text-lightMatrixGreen">Command Prompt</h4>
+          <p>
+            The Command Prompt is a tool for entering system commands. Here are some useful commands:
+          </p>
+          <ul className="list-disc list-inside ml-6">
+            <li><strong>hostname:</strong> Displays the computer&apos;s hostname.</li>
+            <li><strong>whoami:</strong> Displays the current logged-in user.</li>
+            <li><strong>ipconfig:</strong> Displays network configuration, including IP address.</li>
+            <li><strong>/?:</strong> Displays help for available commands.</li>
+            <li><strong>netstat:</strong> Displays information about network connections and ports.</li>
+            <li><strong>net:</strong> Allows managing network and user settings.</li>
+          </ul>
+          <p>
+            Full command list: <a className="link" href="https://ss64.com/nt/">SS64 Command List</a>
+          </p>
+          <h4 className="font-bold text-lightMatrixGreen">Registry Editor</h4>
+          <p>
+            The Registry Editor allows you to edit the system registry, which stores configuration settings for the
+            system and applications. Editing the registry can help customize the system, but caution is needed to avoid
+            damaging critical settings.
+          </p>
+          <p>
+            Link to detailed registry information: <a className="link"
+                                                      href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users">Windows
+            Registry - Advanced Users</a>
           </p>
         </div>
       </main>
