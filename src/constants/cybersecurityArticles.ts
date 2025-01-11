@@ -72,5 +72,14 @@ export const cybersecurityArticles: ArticleType[] = [
     imageAlt: "",
     date: "10-01-2024",
     slug: "windows-fundamentals"
-  }
+  },
+  {
+    day: 8,
+    title: "Active Directory Basics",
+    description: "Coming soon.",
+    imageUrl: "/cybersecurity-articles-images/loading.avif",
+    imageAlt: "",
+    date: "11-01-2024",
+    slug: ""
+  },
 ];
