@@ -82,4 +82,13 @@ export const cybersecurityArticles: ArticleType[] = [
     date: "11-01-2024",
     slug: ""
   },
+  {
+    day: 9,
+    title: "Command Line & PowerShell",
+    description: "Coming soon.",
+    imageUrl: "/cybersecurity-articles-images/loading.avif",
+    imageAlt: "",
+    date: "12-01-2024",
+    slug: "",
+  },
 ];
